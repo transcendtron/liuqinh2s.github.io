@@ -6,7 +6,7 @@
 title:       "Liuqinh2s' Homepage"
 description: "Interested in Virtual Reality & Augment Reality & Artificial Intelligence"
 baseurl:
-url:         # the base hostname & protocol for your site
+url:"https://liuqinh2s.github.io"         # the base hostname & protocol for your site
 img_url: /imgs
 
 #
