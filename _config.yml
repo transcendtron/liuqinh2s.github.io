@@ -3,8 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title:       "Streamelody's Blog"
-description: '小河流我愿待在你身旁 听你唱永恒的歌声'
+title:       "Liuqinh2s' Homepage"
+description: "Interested in Virtual Reality & Augment Reality & Artificial Intelligence"
+baseurl:
 url:         # the base hostname & protocol for your site
 
 #
@@ -12,7 +13,7 @@ url:         # the base hostname & protocol for your site
 # Jekyll configuration
 ####################################
 #
-timezone:          Asia/Shanghai
+# timezone:          Asia/Shanghai
 markdown:          kramdown
 highlighter:       pygments
 excerpt_separator: <!--more-->
@@ -37,16 +38,16 @@ paginate_path: "page/:num/"
 ####################################
 #
 owner:
-  name: Streamelody
+  name: Liuqinh2s
   avatar: avatar.jpg
-  job: "小溪之歌"
-  bio: "小河流我愿待在你身旁 听你唱永恒的歌声"
+  # job: "小溪之歌"
+  # bio: "小河流我愿待在你身旁 听你唱永恒的歌声"
 
-  github: streamelody #username
-  weibo: bailuer #username
-  facebook: streamelody #username
-  email: shuangyeying@gmail.com
-  duoshuo: streamelody #多说域名
+  github: liuqinh2s #username
+  weibo: liuqinh2s #username
+  facebook: liuqinh2s #username
+  email: liuqinh2s@gmail.com
+  duoshuo: liuqinh2s #多说域名
 
   google:
     plus: #username
