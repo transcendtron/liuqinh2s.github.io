@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<!-- mathjax -->
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
 <!-- 判断是否插入首页图片 -->
 {% if page.image.feature %}
 <div class="post-image-feature">
@@ -40,13 +47,7 @@ layout: default
     </article>
 </div>
 
-<!-- mathjax -->
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-});
-</script>
+
 <!-- 引入google code pretiffy -->
 <script src="/js/jquery.min.js"></script>
 <script src="/js/google-code-prettify/prettify.js"></script>
