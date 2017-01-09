@@ -2,7 +2,7 @@
 layout: post
 title: 学习方法总结
 categories: 方法
-comment: true
+comments: true
 ---
 
 
