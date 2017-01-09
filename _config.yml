@@ -39,7 +39,7 @@ paginate_path: "page/:num/"
 #
 owner:
   name: Liuqinh2s
-  avatar: avatar.png
+  avatar: avatar.jpg
   # job: "小溪之歌"
   # bio: "小河流我愿待在你身旁 听你唱永恒的歌声"
 
