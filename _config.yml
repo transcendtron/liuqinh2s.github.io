@@ -7,6 +7,7 @@ title:       "Liuqinh2s' Homepage"
 description: "Interested in Virtual Reality & Augment Reality & Artificial Intelligence"
 baseurl:
 url:         # the base hostname & protocol for your site
+img_url: /imgs
 
 #
 ###################################
@@ -46,7 +47,7 @@ owner:
   github: liuqinh2s #username
   weibo: liuqinh2s #username
   zhihu: liuqinh2s
-  # facebook: liuqinh2s 
+  # facebook: liuqinh2s
   email: liuqinh2s@gmail.com
   duoshuo: liuqinh2s #多说域名
 
