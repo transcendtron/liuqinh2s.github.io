@@ -40,7 +40,7 @@ paginate_path: "page/:num/"
 #
 owner:
   name: Liuqinh2s
-  avatar: avatar.jpg
+  avatar: Avatar.jpg
   # job: "小溪之歌"
   bio: "Interested in Virtual Reality & Augment Reality & Artificial Intelligence"
 
