@@ -70,4 +70,4 @@ permalink: /about
 1. 用spigot 搭建了minecraft服务器
 2. shadowsocks服务器搭建
 （这两个东西都是在阿里云上搞的）
-3. 用github pages和jekyll搭建了一个个人博客
+3. 用github pages和jekyll搭建了一个个人博客，就是现在你看到的这个
