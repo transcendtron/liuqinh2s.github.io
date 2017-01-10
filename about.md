@@ -69,5 +69,5 @@ permalink: /about
 
 1. 用spigot 搭建了minecraft服务器
 2. shadowsocks服务器搭建
-（这两个东西都是在阿里云上搞的）
+（这两个东西都是在阿里云上搞的，由于费用太昂贵我就停了，等以后有钱了再开吧）
 3. 用github pages和jekyll搭建了一个个人博客，就是现在你看到的这个
