@@ -2,6 +2,7 @@
 layout: page
 title: 关于我
 permalink: /about
+comments: true
 ---
 
 ## 技能树
