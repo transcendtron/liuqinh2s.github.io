@@ -69,6 +69,7 @@ else
 <html>
 <body>
 <script src="myScript.js"></script>
+//myScript.js就是那个单独的文件，把JavaScript代码放到这个文件中，然后使用的时候只需引用它即可。
 </body>
 </html>
 ```
