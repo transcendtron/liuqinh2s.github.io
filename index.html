@@ -4,18 +4,18 @@ layout: default
 
 <!-- 遍历分页后的文章 -->
 <ol class="post-list">
-    
-    
+
+
 <div class="posts">
     {% for post in paginator.posts %}
      <li>
 
-    
+
     <div class="post">
         <h3 class="post-list__post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h3>
-        
+
         <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 200 }}&hellip;</p>
-        
+
         <p class="post-meta">
         <span class="home-post-date">
             {{ post.date | date: "%Y-%m-%d" | upcase }}
@@ -29,11 +29,12 @@ layout: default
         {% endunless %}
         {% endfor %}
         {% endif %}
+        <div class = "post-list-small-mate">
+            <a class="btn-border-small" href={{ post.url }}>阅读全文</a>
+        </div>
         </p>
-        
-<div class = "post-list-small-mate">
-    <a class="btn-border-small" href={{ post.url }}>阅读全文</a>
-</div>
+
+
 
 <hr class="home-post-list__divider" />
 
@@ -52,7 +53,7 @@ layout: default
     {% else %}
         <span class="pagination-item newer">最近</span>
     {% endif %}
-   
+
     <span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
 
     {% if paginator.next_page %}
