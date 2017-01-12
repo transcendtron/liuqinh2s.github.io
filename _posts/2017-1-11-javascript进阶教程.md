@@ -1,6 +1,6 @@
 ---
 layout: post
-titile: javascript进阶教程
+title: javascript进阶教程
 categories: 教程
 tags: 前端
 comments: true
