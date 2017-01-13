@@ -48,7 +48,7 @@ Note: You may assume that n is not less than 2 and not larger than 58.
 11  | `3*3*3*2`
 12  | `3*3*3*3`
 
->好，我们定义一个最大值数组`dp[n]`(dynamic programming)，`dp[5]`即，规模为5时候的最大值。
+>好，我们定义一个最大值数组`dp[n]`(dynamic programming)，`dp[5]`即规模为5时候的最大值。
 
 从上面的表中，你发现了什么规律？
 
@@ -100,7 +100,7 @@ class Solution(object):
 
 下面真正吊炸天的来了。
 
-聪明的你肯定已经发现，这完全就是个2跟3的游戏，是的事实就是如此。
+聪明的你肯定已经发现，这完全就是个2跟3的游戏，是的，事实就是如此。
 
 - n%3==0时，就全部用3
 - n%3==2时，勉为其难用个2吧
