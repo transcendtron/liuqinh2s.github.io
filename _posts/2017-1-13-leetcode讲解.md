@@ -18,7 +18,9 @@ comments: true
 1. 第一步把每道题的讲解和代码贴出来
 2. 第二步，做个总结，按照算法体系把有价值的题归纳、举一反三，得出一些有价值的思考和结论。
 
-另外贴出项目地址：[leetcode讲解](https://github.com/liuqinh2s/leetcode)
+下面我博客中可能会用python，也可能用C++，如果想看其他语言（python、C++，目前只有这两种语言，今后学了其他语言再来刷，哈哈，感觉有点蛋疼）的代码，就到我的github上看吧。
+
+贴出项目地址：[leetcode讲解](https://github.com/liuqinh2s/leetcode)
 
 ### 343. Integer Break
 
@@ -133,6 +135,12 @@ class Solution(object):
 
 ### 169. Majority Element
 
+Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
+
+You may assume that the array is non-empty and the majority element always exist in the array.
+
+[题目地址](https://leetcode.com/problems/majority-element/)
+
 唉，看到这题就想起了，当年，青葱岁月，菜鸡的我做阿里的笔试题，对的，就是这题。当时题目改成了小明收红包，找出现次数超过一般的那个红包，要求线性时间复杂度，也就是说不能用排序（排序算法最优情况是：O(nlogn)）。
 
 出现次数超过一半的那个数，我们怎么在O(n)时间复杂度内把它揪出来，我教你：大浪淘沙法，是金子总会发光法，我要打十个法（意思就是，这一个数就能干翻全场剩下的所有数，是不是？因为它超过一半啊）。我们来想象一下：我们遍历这个数组的时候，定义一个count用来计数，这个超过一半的数，它遇到自己就给count加1，遇到不是自己的数，就给count减1，最后会怎样呢，count肯定大于0呐，因为这个数的个数超过一半。好，进一步的，我们先随便找个数当这个老大（个数超过一半），如果它的个数不超过一半，就会在相消中时count为0，那么就把它换掉，最后剩下的那个就是，个数超过一半的那个数了。
@@ -163,3 +171,94 @@ class Solution(object):
 超过一半呐，多么重的一条信息，稍微想想就知道，用相消法都能消出那个数，跟那个用异或消出只出现一次的数（其它的数都是成对的，就是都恰好有两个）是不是异曲同工呐，嗯还是扯得有点远。
 
 另外这个题在leetcode上的难度是easy哦，好伤心啊，当初的我连这题都没想出解法，真是够年轻啊。
+
+### 409. Longest Palindrome
+
+Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
+
+This is case sensitive, for example "Aa" is not considered a palindrome here.
+
+Note:
+Assume the length of given string will not exceed 1,010.
+
+Example:
+
+Input:
+"abccccdd"
+
+Output:
+7
+
+Explanation:
+One longest palindrome that can be built is "dccaccd", whose length is 7.
+
+[题目地址](https://leetcode.com/problems/longest-palindrome/)
+
+这题有点小儿科了，很简单，你看有多少个对子（打过牌吗，就是看有多少对子），然后看有没有一个单（注意：只需要一个单，放中间就行了）。
+
+```
+class Solution {
+public:
+    int longestPalindrome(string s) {
+        unordered_map<char, int> hash;
+        int count=0;
+        int flag=0;//看有没有单
+        for(auto i:s){
+            hash[i]++;
+        }
+        for(auto i:hash){
+            if(i.second%2 != 0)
+                flag=1;
+            count += (i.second/2)*2;//把对子全都加上
+        }
+        return count+flag;
+    }
+};
+```
+
+### 392. Is Subsequence
+
+Given a string s and a string t, check if s is subsequence of t.
+
+You may assume that there is only lower case English letters in both s and t. t is potentially a very long (length ~= 500,000) string, and s is a short string (<=100).
+
+A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, "ace" is a subsequence of "abcde" while "aec" is not).
+
+Example 1:
+s = "abc", t = "ahbgdc"
+
+Return true.
+
+Example 2:
+s = "axc", t = "ahbgdc"
+
+Return false.
+
+Follow up:
+If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B, and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?
+
+[题目地址](https://leetcode.com/problems/is-subsequence/)
+
+这题我觉得很简单啊，不知道为何评级是medium。
+
+就是遍历两个字符串就行了。直接上代码，看不懂可以在评论里面写上，我会针对性讲解。
+
+```
+class Solution {
+public:
+    bool isSubsequence(string s, string t) {
+        int i=0,j=0;
+        while(i<s.size() && j<t.size()){
+            if(s[i]==t[j]){
+                i++;
+                j++;
+            }else{
+                j++;
+            }
+        }
+        if(i!=s.size())
+            return false;
+        return true;
+    }
+};
+```
