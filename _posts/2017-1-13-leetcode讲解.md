@@ -280,9 +280,7 @@ Note: Recursive solution is trivial, could you do it iteratively?
 
 [题目地址](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 
-嗯，经典的题目，中序遍历二叉树。题目说递归做起来太简单，请用迭代。我觉得还是先用递归做一下吧，也许我递归都不会呢？谁知道呢，是吧。然后发现，嗯，果然很简单，我好想已经不是从前那个菜逼了。
-
-![手舞足蹈](http://photo.weibo.com/6023932602/photos/detail/photo_id/4063822305477309/album_id/4062444585640652)
+嗯，经典的题目，中序遍历二叉树。题目说递归做起来太简单，请用迭代。我觉得还是先用递归做一下吧，也许我递归都不会呢？谁知道呢，是吧。然后发现，嗯，果然很简单，我好像已经不是从前那个菜逼了。
 
 代码如下：
 
