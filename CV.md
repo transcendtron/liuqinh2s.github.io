@@ -1,8 +1,19 @@
+---
+layout: post
+title: 简历
+categories: 简历
+tags: 简历
+comments: true
+---
+
 ## 个人信息
 
 姓名： **刘钦**
+
 个人主页： https://liuqinh2s.github.io
+
 手机： 15580803463
+
 邮箱： liuqinh2s@gmail.com
 
 ## 经历
