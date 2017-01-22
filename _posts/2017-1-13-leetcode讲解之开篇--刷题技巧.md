@@ -2,7 +2,7 @@
 layout: post
 title: leetcode讲解之开篇--刷题技巧
 categories: leetcode
-tags: 算法
+tags: [算法, leetcode, 编程]
 comments: true
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: markdown语法
 categories: 教程
-tags: 标记语言
+tags: [标记语言, 语法]
 comments: true
 ---
 

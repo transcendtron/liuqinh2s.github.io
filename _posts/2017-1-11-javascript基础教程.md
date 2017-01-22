@@ -2,7 +2,7 @@
 layout: post
 title: javascript基础教程
 categories: 教程
-tags: 前端
+tags: [前端, JavaScript]
 comments: true
 ---
 

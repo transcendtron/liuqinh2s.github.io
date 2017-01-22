@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 学习方法总结
-categories: 方法
+categories: 方法论
+tags: [学习, 方法]
 comments: true
 ---
 
