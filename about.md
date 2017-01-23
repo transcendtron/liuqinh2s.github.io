@@ -11,7 +11,7 @@ comments: true
 
 ### 编程语言
 
-**C/C++、Java、Python**
+**C/C++、Java、Python、javascript**
 
 ### 工具
 
