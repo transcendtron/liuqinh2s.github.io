@@ -19,6 +19,6 @@ comments: true
 1. 第一步把每道题的讲解和代码贴出来
 2. 第二步，做个总结，按照算法体系把有价值的题归纳、举一反三，得出一些有价值的思考和结论。
 
-下面我博客中可能会用python，也可能用C++，如果想看其他语言（python、C++，目前只有这两种语言，今后学了其他语言再来刷，哈哈，感觉有点蛋疼）的代码，就到我的github上看吧。
+下面我将使用leetcode所支持的6种语言（C、C++、Java、C#、Python、JavaScript），刷完每一道题。
 
-贴出项目地址：[leetcode讲解](https://github.com/liuqinh2s/leetcode)
+贴出博客地址：[liuqinh2s的个人主页](https://liuqinh2s.github.io/about)
