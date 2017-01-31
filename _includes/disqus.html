@@ -1,4 +1,5 @@
 
+{% if page.comments == true %}
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = '{{ site.owner.disqus-shortname }}';
@@ -11,3 +12,4 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+{% endif %}
