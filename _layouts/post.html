@@ -62,6 +62,9 @@ MathJax.Hub.Config({
 <hr class="post-list__divider" />
 {% include new-old.html %}
 
+<!-- disqus评论框 start -->
+{% include disqus.html %}
+
 <!-- 多说评论框 start -->
 {% if page.comments == true %}
 <div class="ds-thread" data-thread-key="{{ site.url }}" data-title="{{ page.title }}" data-url="{{ site.url }}"></div>
