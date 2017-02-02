@@ -84,7 +84,7 @@ Finder还有tag系统，你可以通过tag来访问属于同一个tag的文件
 
 ### 快捷键
 
-快捷键肯定是最重要的啦！
+>快捷键肯定是最重要的啦！
 
 然后讲讲快捷键设计，我在windows下已经有了些使用快捷键的习惯，比如：
 
@@ -268,6 +268,7 @@ Launchpad是指，你在触摸板上用五指向中间收拢，出现的全是AP
 Dock是指，最下方的摆满APP的一栏，在Dock上你可以放上最常用的APP。
 
 调整launchpad的图标大小：
+
 ```
 defaults write com.apple.dock springboard-rows Default
 
