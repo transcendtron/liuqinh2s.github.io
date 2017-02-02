@@ -12,31 +12,67 @@ comments: true
 
 # 普通用户使用mac指南
 
+## 浏览器
+
+找不到浏览器吗？点击像指南针图标的那个safari，那个应用就是浏览器。
+
 ## 输入法
 
 和初次使用Linux一样，一上来我们肯定就要碰到输入法的难题，**mac切换输入法的快捷键是command+space（空格）**。对于用惯了搜狗输入法的同学，这里我推荐使用搜狗输入法。
 
 ![mac输入法截图](http://wx4.sinaimg.cn/mw690/006zFO3ggy1fcceny2wsuj31kw0zkdku.jpg)
 
-**搜狗的通用中英文切换键是 shift**。
+**搜狗默认的通用中英文切换键是 shift**。
 
 ## 触摸板
 
-mac的触摸板应该是所有笔记本电脑触摸板的宗师吧，而且也是最好用的触摸板。
+mac的触摸板应该是所有笔记本电脑触摸板的宗师吧，而且也是最好用的触摸板。我用mac的时候，除了玩游戏，完全用不着鼠标。
+
+没有鼠标，那么左右键怎么办？很简单：一指单击触摸板，就是左键，两指单击触摸板，就是右键。**记得将轻触触摸板设置为点击，这样可以延长触摸板的寿命，而且点起来也舒服多了。**
 
 五指合拢，你可以看到你电脑上安装好的应用，这个界面叫做：launchpad。
 
 ![launchpad截图](http://wx2.sinaimg.cn/mw690/006zFO3ggy1fccexd55wpj31kw0zktgg.jpg)
 
-五指弹开，如果你处在launchpad界面，五指弹开就会回到原先五指合拢之前的那个界面，回到这个界面之后，再用一次五指弹开，就是弹开所有应用，让你看到桌面（应用全屏时候此法失效）。
+五指弹开，如果你处在launchpad界面，五指弹开就会回到原先五指合拢之前的那个界面，回到这个界面之后，再用一次五指弹开，就是弹开所有应用，让你看到桌面（如果你当前窗口是全屏模式，则此法失效）。
+
+![弹开应用看到桌面](http://wx3.sinaimg.cn/mw690/006zFO3ggy1fccf5tp4rpj31kw0zkjwj.jpg)
 
 三指上推，可以看到所有打开的窗口的缩略图。
 
 ![窗口缩略图](http://wx4.sinaimg.cn/mw690/006zFO3ggy1fccf0mfcanj31kw0zkqcm.jpg)
 
-### 文件管理器Finder
+三指横扫，可以在全屏之间切换，这是我最喜欢的设计之一。
 
-首先讲Finder，这是mac 系统，也就是OS X系统的文件管理器，和windows的文件管理器对比有有点不同，最不方便的地方在于点击右键没有新建文件选项，如果你会Linux，可以用命令`touch 文件名`来新建文件，如果你不会命令，可以先打开文本编辑器，再新建文本文件，它的设计哲学是，你要新建什么文件，就先打开与这个文件相关的软件，再在这个软件里新建这个类型的文件，不过不方便就是不方便。再讲讲优秀的地方，Finder可以打开多及目录
+## 安装应用
+
+去官网下好应用，通常是.dmg后缀的安装包，打开，**拖拽到Applications文件夹就完成了安装**，比Windows爽多了吧。
+
+## 文件管理器Finder
+
+右键之后，没有新建文件选项。
+
+**你只能先打开应用，然后在应用中新建文件。**
+
+**记住在Windows上用的很爽的ctrl+a、ctrl+s、ctrl+c、ctrl+v、ctrl+f等等，在mac上统统把ctrl换成command就OK了。**
+
+command+x不能剪切文件和文件夹是吧。
+
+解决办法是：**先command+c，然后command+option+v，成功的完成文件的剪切和粘贴**。
+
+普通用户的指南到此结束，如果有什么问题，请私信我的知乎，我博客头像下面有个知乎的知的图标，点击就能到我的知乎个人主页。
+
+# 程序员mac指南
+
+先上几个零碎的小技巧：
+
+触摸板双指双击，放大（我觉得其实没啥卵用）
+
+在应用窗口顶栏双击，缩放窗口（这个Windows也有的）
+
+## 文件管理器Finder
+
+首先讲Finder，这是mac 系统，也就是OS X系统的文件管理器，和windows的文件管理器对比有有点不同，最不方便的地方在于点击右键没有新建文件选项，如果你会Linux，可以用命令`touch 文件名`来新建文件，如果你不会命令，可以先打开文本编辑器，再新建文本文件，它的设计哲学是，你要新建什么文件，就先打开与这个文件相关的软件，再在这个软件里新建这个类型的文件，不过不方便就是不方便。再讲讲优秀的地方，Finder可以打开多及目录。
 
 ![Finder多级目录](http://ww4.sinaimg.cn/mw690/005DrjN1gw1fbgxqax4waj316s0o8n0e.jpg)
 
@@ -47,6 +83,8 @@ Finder还有tag系统，你可以通过tag来访问属于同一个tag的文件
 ![Finder的tag功能](http://ww3.sinaimg.cn/mw690/005DrjN1gw1fbgxwxxpobj316s0o8ad8.jpg)
 
 ### 快捷键
+
+快捷键肯定是最重要的啦！
 
 然后讲讲快捷键设计，我在windows下已经有了些使用快捷键的习惯，比如：
 
@@ -82,32 +120,23 @@ cmd+V粘贴
 
 cmd+F查找
 
-cmd+,打开preferance也就是打开设置界面
+**cmd+,打开preferance也就是打开设置界面**
 
-cmd+N打开新窗口
+**cmd+N打开新窗口**
 
-cmd+W关闭窗口
+**cmd+W关闭窗口**
 
-cmd+H隐藏窗口
+**cmd+H隐藏窗口**
 
-cmd+Q退出程序
+**cmd+Q退出程序**
 
-cmd+ctrl+F全屏
+**cmd+ctrl+F全屏**
 
 cmd+Tab切换程序
 
 你用了Finder之后可能会恼火没有剪切文件的功能，但其实是有的，只是快捷键不一样，剪切文件的快捷键是，**先cmd+C复制，然后cmd+option+V粘贴。**
 
 这是我常用的几个快捷键。总之快捷键不用记很多，按你自己的需要，记住常用的就行。
-
-另外对于乐于摸索的孩子，我觉得一些小trick可以增加趣味性，从而激发兴趣。下面再讲些不常用但是有意思的：
-
-除了cmd是常用的，option键也值得我们关注，下面讲几个option的妙用：
-
-按住option+shift可以微调（1/4微调）音量、键盘背光亮度和屏幕亮度，按住option再按其他字母键等，会出现奇怪的字符¥©
-©œ∑®†¥åß©≈ç等等。
-
-按住option再把鼠标移到Dock上的APP上，你会发现退出变成了强制退出，怎么样option键还是挺强大的吧。
 
 Command+Option+D 控制Dock的显示与隐藏
 
@@ -160,17 +189,17 @@ Command+T    打开一个新Tab
 
 Command+Shift+T    打开一个之前被关闭的Tab
 
-Command+Shift+J    打开下载页面
+**Command+Shift+J    打开下载页面**
 
 Command+Shift+C    打开“检查(spectator)”，鼠标右键可以看到这个选项，一般是程序员使用的高级功能，但不能再次使用快捷键关闭。
 
-Command+Shift+I     同样是打开spectator，使用开发人员工具，但可以再次使用快捷键关闭。
+**Command+Shift+I     同样是打开spectator，使用开发人员工具，但可以再次使用快捷键关闭。**
 
-Command+Shift+B 打开或关闭书签栏
+**Command+Shift+B 打开或关闭书签栏**
 
 Command+Option+B    打开书签管理器
 
-Command+Y   打开历史记录
+**Command+Y   打开历史记录**
 
 Command+Option+左右方向键   切换标签页
 
@@ -182,11 +211,11 @@ Command+上下方向键  跳到页面顶部或底部
 
 Command+Option+J    打开javascript控制台
 
-按住Command后点击链接，在新Tab（标签页）中打开这条链接。
+**按住Command后点击链接，在新Tab（标签页）中打开这条链接。**
 
 Command+Shift再点击链接，在新标签页中打开并切换到新标签页
 
-Command+Shift+N 用隐身模式打开新窗口
+**Command+Shift+N 用隐身模式打开新窗口**
 
 Command+Shift+W 关闭当前窗口
 
@@ -198,13 +227,13 @@ Command+Option+U    查看网页源代码
 
 ### iTerm2快捷键
 
-iTerm2中的文本，选中即复制
+**iTerm2中的文本，选中即复制**
 
-Command+D   水平分隔出一个终端
+**Command+D   水平分隔出一个终端**
 
-Command+Shift+D 垂直分割出一个终端
+**Command+Shift+D 垂直分割出一个终端**
 
-可以配置透明度，Command+U快速切换透明与否
+**可以配置透明度，Command+U快速切换透明与否**
 
 可以配置全局唤出快捷键，我自己配置的是Command+T
 
@@ -212,27 +241,20 @@ Command+Shift+D 垂直分割出一个终端
 
 Command+Shift+H 查看复制历史
 
-Command+Enter   快速切换全屏与否
+**Command+Enter   快速切换全屏与否**
 
 ### CLI(命令行)快捷键
 
-本来这里应该放到Linux里面讲的，但Mac本身的特点就是GUI和CLI的完美结合（很多Linux的爱好者，有不想被Linux的桌面、各种驱动、不兼容等等杂七杂八的问题折腾的，大可选择Mac）。
+Mac本身的特点就是GUI和CLI的完美结合（很多Linux的爱好者，又不想被Linux的桌面、各种驱动、不兼容等等杂七杂八的问题折腾的，大可选择Mac）。
 
 首先教一个最重要的东西
-记住按Tab补全，这是命令行用的爽的根源。
+**记住按Tab补全，这是命令行用的爽的根源。**
 
-Ctrl+A  回到行首
+**Ctrl+A  回到行首**
 
-Ctrl+E  到行末
+**Ctrl+E  到行末**
 
-Ctrl+U  删除一行
-
-然后基本的Linux命令来了
-
-cd /    到根目录
-
-open /  用Finder打开根目录
-
+**Ctrl+U  删除一行**
 
 ### 格式转换
 
@@ -259,8 +281,18 @@ killall Dock
 
 触摸板很好用啊，自己慢慢体会，这个东西很简单，小孩子都玩的会。
 
+## Option的妙用
 
-数学符号：
+另外对于乐于摸索的孩子，我觉得一些小trick可以增加趣味性，从而激发兴趣。下面再讲些不常用但是有意思的：
+
+除了cmd是常用的，option键也值得我们关注，下面讲几个option的妙用：
+
+按住option+shift可以微调（1/4微调）音量、键盘背光亮度和屏幕亮度，按住option再按其他字母键等，会出现奇怪的字符¥©
+©œ∑®†¥åß©≈ç等等。
+
+按住option再把鼠标移到Dock上的APP上，你会发现退出变成了强制退出，怎么样option键还是挺强大的吧。
+
+### 数学符号：
 
 约等于: `Option + X` = ≈
 度数: `Shift + Option + 8` = °
@@ -273,13 +305,8 @@ killall Dock
 开方: `Option + V` = √
 求和符号: `Option + W` = ∑
 
-
-输入特殊符号：
+### 输入特殊符号：
 
 版权符号: Option + G = ©
 
 人民币符号: Option + Y = ¥
-
-触摸板双指双击，放大
-
-在应用窗口顶栏双击，缩放窗口
