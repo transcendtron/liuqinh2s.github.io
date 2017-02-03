@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 从 windows 转用 mac OS X 记录
-categories: 小札记
+categories: 趟坑笔记
 tags: [工具, mac]
 comments: true
 ---

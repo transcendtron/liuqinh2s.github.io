@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python游戏开发之BombMan
-categories: 实战项目
+categories: 实战经历
 tags: [游戏, Python, 编程]
 comments: true
 ---
