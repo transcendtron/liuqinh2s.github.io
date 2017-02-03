@@ -6,6 +6,8 @@ tags: 简历
 comments: true
 ---
 
+<a href="javascript:window.print()">click there to get pdf</a>
+
 ## 个人信息
 
 姓名： **刘钦**
