@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 简历
-categories: 简历
-tags: 简历
-comments: true
+comments: false
 ---
 
 <a href="javascript:window.print()">click there to get pdf</a>
