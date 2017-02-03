@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 简历
-comments: false
 ---
 
 <a href="javascript:window.print()">click there to get pdf</a>
