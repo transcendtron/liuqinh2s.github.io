@@ -10,6 +10,10 @@ comments: true
 
 由于我本人是学计算机的，喜欢用一些设计的好的快捷键，所以我分为两部分吧，第一部分讲给普通用户，第二部分讲给程序员。
 
+先告诉你们一个通用小技巧，众所周知，flash视频非常让电脑发热，而看HTML5视频则一点都不热。safari有个伪装成iPad或者iPhone的功能，可以把视频强制用HTML5播放。你的MacBook就再也不会在看视频的时候发烫了。
+
+![safari强制使用HTML5播放视频](http://wx4.sinaimg.cn/mw690/006zFO3ggy1fcd4d2uzibj31kw0zkdug.jpg)
+
 # 普通用户使用mac指南
 
 ## 浏览器
