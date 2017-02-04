@@ -39,7 +39,7 @@ comments: true
 5. 学了点 **Python爬虫**，做了一个小东西，
 [Python爬虫之百度贴吧ID挖掘机](https://liuqinh2s.github.io/2017/01/%E7%99%BE%E5%BA%A6%E8%B4%B4%E5%90%A7ID%E6%8C%96%E6%8E%98%E6%9C%BA/)
 
-## 水平实力
+## 技能树
 
 ### 计算机基础
 
