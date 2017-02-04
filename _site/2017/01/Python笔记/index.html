@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Python笔记</title>
+  <meta name="description" content="python 特性写在前面：编程是非常注重实战的，一定要在实战中慢慢体会，这样效率才高，单看语法教程不仅看不进去，而且一点卵用都没有。  我是从C/C++转过来学python的，所以我会拿C/C++来和python进行对比。1. 不需要申明变量类型，比如：#!/usr/bin/python# -*- coding...">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+
+  <link rel="canonical" href="http://localhost:4000/2017/01/Python%E7%AC%94%E8%AE%B0/">
+  <link rel="alternate" type="application/rss+xml" title="Liuqinh2s' Homepage" href="http://localhost:4000 /feed.xml " />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+</head>
+
+
+<body>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="table cover">
+        
+
+<div class="cover-card table-cell table-middle">
+  
+  <img src="/imgs/Avatar.jpg" alt="" class="avatar">
+  
+  <a href="http://localhost:4000/" class="author_name">Liuqinh2s</a>
+  <span class="author_job"></span>
+  <span class="author_bio mbm">Interested in Virtual Reality & Augment Reality & Artificial Intelligence</span>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="http://localhost:4000/">首页</a>
+        <span>/</span>
+      </li>
+       
+      <li class="nav-item">
+        <a href="http://localhost:4000/CV/">简历</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="http://localhost:4000/about">关于我</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="http://localhost:4000/archive/">归档</a>
+        
+          <span>/</span>
+        
+      </li>
+          
+      <li class="nav-item">
+        <a href="http://localhost:4000/categories/">分类</a>
+        
+          <span>/</span>
+        
+      </li>
+            
+      <li class="nav-item">
+        <a href="http://localhost:4000/tags/">标签</a>
+        
+          <span>/</span>
+        
+      </li>
+             
+    </ul>
+  </nav>
+  <div class="social-links">
+  <ul>
+    <li><a href="http://github.com/liuqinh2s" class="social-link-item" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+    <li><a href="http://www.weibo.com/liuqinh2s" class="social-link-item" target="_blank"><i class="fa fa-fw fa-weibo"></i></a></li>
+    
+    <li><a href="https://www.zhihu.com/people/liuqinh2s" class="social-link-item" target="_blank"><img src="/imgs/zhihu-small.png" height="15" width="15" alt="" class="zhihu"></a></li>
+    <li><a href="mailto:liuqinh2s@gmail.com" class="social-link-item" target="_blank"><i class="fa fa-fw fa-envelope"></i></a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ul>
+</div>
+
+  友情链接
+<div class="friends-links">
+    <a href="http://lianera.com" class="friends-link-item" target="_blank">lianera</a>
+</div>
+
+</div>
+
+      </div>
+    </div>
+    <div class="col s12 m9">
+      <div class="post-listing">
+        <!-- mathjax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<!-- 判断是否插入首页图片 -->
+
+
+<!-- 添加日期和阅读 -->
+<div id="post">
+    <header class="post-header">
+        <span class="post-meta">
+            <span class="post-date">
+                2017-01-08
+            </span>
+            •
+            <span class="read-time" title="Estimated read time">
+  
+  
+    1 min read
+  
+</span>
+
+        </span>
+        <h1 title="Python笔记">Python笔记</h1>
+    </header>
+
+    <!-- 引入google code pretiffy高亮样式 -->
+    <link href="/js/google-code-prettify/themes/github-v2.css" rel="stylesheet" type="text/css" />
+
+    <!-- 添加博文 -->
+    <article class="post-content">
+        <h2 id="python-特性">python 特性</h2>
+
+<h3 id="写在前面">写在前面：</h3>
+
+<p><strong>编程是非常注重实战的，一定要在实战中慢慢体会，这样效率才高，
+单看语法教程不仅看不进去，而且一点卵用都没有。</strong></p>
+
+<blockquote>
+  <p>我是从C/C++转过来学python的，所以我会拿C/C++来和python进行对比。</p>
+</blockquote>
+
+<h3 id="1-不需要申明变量类型比如">1. 不需要申明变量类型，比如：</h3>
+
+<pre><code>#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+counter = 100 # 赋值整型变量
+miles = 1000.0 # 浮点型
+name = "John" # 字符串
+
+print counter
+print miles
+print name
+# 这个print语法是python2的，python3的print要用函数形式：print()
+</code></pre>
+
+<h3 id="2-同时给多个变量赋值比如">2. 同时给多个变量赋值，比如：</h3>
+
+<pre><code>a = b = c = 1
+# 以上实例，创建一个整型对象，值为1，三个变量被分配到相同的内存空间上。
+a, b, c = 1, 2, "john"
+</code></pre>
+
+<h3 id="3-基本数据类型有">3. 基本数据类型有：</h3>
+
+<ul>
+  <li>Numbers（数字）</li>
+  <li>String（字符串）</li>
+  <li>List（列表）</li>
+  <li>tuple（元组）</li>
+  <li>Dictionary（字典），相当于其他语言中的hashmap，存储键值对（key, value）</li>
+</ul>
+
+<p>Numbers包括：</p>
+
+<ul>
+  <li>int（整形）</li>
+  <li>long（长整形）</li>
+  <li>float（浮点型）</li>
+  <li>complex（复数）</li>
+</ul>
+
+<h3 id="高级数据结构">高级数据结构</h3>
+
+<p>List  特别好用的高级动态数组
+tuple 不能更改的List
+dict  其实就是其他语言中的hashmap
+set   不重复集合，也可以看成没有value，只有key的dict</p>
+
+<h3 id="高级操作">高级操作</h3>
+
+<p>切片(slice) 可以灵活的取list、str，可以倒数地取数
+迭代(Iterate) 这个很多语言都有
+列表生成式 在中括号框里面码代码[x*x for x in range(1,10)]，其实也没啥卵用
+生成器(generator)，也叫惰性求值，其实保存函数，在需要的时候再实时的计算，比如生成斐波那契数列、杨辉三角，还是很有用的。</p>
+
+<h3 id="高阶函数">高阶函数</h3>
+
+<p>高阶函数的定义是：参数或返回值里面有函数。
+map/reduce函数，map就是把一个迭代对象里的每一个元素，都调用一个函数计算，相当于数学里的函数映射，reduce则是一种fold运算，累次计算，可以用来累加、累乘。
+filter，删选函数，对象也是迭代对象。
+sorted，排序
+匿名函数，lambda式就是一个匿名函数，这个概念在很多语言里面都有。
+装饰器，decorate，用来打印日志的，图个方便而已，其实也没啥卵用。
+偏函数，partial function，用来处理默认参数的，图个方便而已，其实也没啥卵用。</p>
+
+<h3 id="四种参数">四种参数</h3>
+
+<p>位置参数，就是必选参数
+默认参数，可以写上参数=什么
+可变参数，参数是一个多元素的对象，比如tuple，使用*args来调用
+关键字参数，参数对象是一个map，用**kw，来调用，一般处理注册信息的时候，非必填信息可以用这个来装。</p>
+
+<h3 id="python2到python3的转换">python2到python3的转换</h3>
+
+<p>Python虽然好用，但Python2到Python3的跨越确实把很多新手恶心到了，但作为一个程序员，我们的能力应该是可以强到解决这种小问题的。<a href="https://gist.github.com/scturtle/3060332">python2和python3的区别</a></p>
+
+<h2 id="python-趣谈">python 趣谈</h2>
+
+<p><a href="https://www.15yan.com/story/1JKTBQvVk5e/">python 发展史</a></p>
+
+<p>摘要：</p>
+<ol>
+  <li>python语言结合了ABC语言和C语言</li>
+  <li>Python从一开始就特别在意可拓展性。Python可以在多个层次上拓展。从高层上，你可以直接引入.py文件。在底层，你可以引用C语言的库。Python程序员可以快速的使用Python写.py文件作为拓展模块。但当性能是考虑的重要因素时，Python程序员可以深入底层，写C程序，编译为.so文件引入到Python中使用。<strong>俗称：胶水语言</strong></li>
+</ol>
+
+    </article>
+</div>
+
+
+<!-- 引入google code pretiffy -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/google-code-prettify/prettify.js"></script>
+<script type="text/javascript">
+    $(function(){
+      $("pre").addClass("prettyprint linenums");
+      prettyPrint();
+      });
+    </script>
+
+<!-- 添加博文分割线 -->
+<hr class="post-list__divider" />
+<section>
+       <ul class="pager">
+        
+        <li class="previous">
+            <a href="/2017/01/Mac%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" data-toggle="tooltip" data-placement="top" title="mac使用总结">上一篇：  <span>mac使用总结</span>
+            </a>
+        </li>
+        
+        
+        <li class="next">
+            <a href="/2017/01/HTML%E6%95%99%E7%A8%8B/" data-toggle="tooltip" data-placement="top" title="HTML教程">下一篇：  <span>HTML教程</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+<!-- 多说评论框 start -->
+
+<div class="ds-thread" data-thread-key="http://localhost:4000" data-title="Python笔记" data-url="http://localhost:4000"></div>
+<!-- 多说评论框 end -->
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"liuqinh2s"};
+    (function() {
+     var ds = document.createElement('script');
+     ds.type = 'text/javascript';ds.async = true;
+     ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+     ds.charset = 'UTF-8';
+     (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+     })();
+    </script>
+<!-- 多说公共JS代码 end -->
+
+
+        <footer>
+  &copy; 2017 Liuqinh2s <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> Themes <a href="http://github.com/renyuanz/leonids/" target="_blank">Leonids</a>
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="http://localhost:4000/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/js/main.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62251910-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>

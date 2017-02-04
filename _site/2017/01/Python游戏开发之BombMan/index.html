@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Python游戏开发之BombMan</title>
+  <meta name="description" content="环境安装Python3、pygame我用的是 macbook，下面讲讲 mac OS 的环境搭建：先使用homebrew安装Python3.可以看到我已经安装好了Python3。  关于homebrew的安装和使用教程网上很多，我这里就不写了，有疑问可以在评论里面提，我将一一解答然后安装pygame:pip3 i...">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+
+  <link rel="canonical" href="http://localhost:4000/2017/01/Python%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E4%B9%8BBombMan/">
+  <link rel="alternate" type="application/rss+xml" title="Liuqinh2s' Homepage" href="http://localhost:4000 /feed.xml " />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+</head>
+
+
+<body>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="table cover">
+        
+
+<div class="cover-card table-cell table-middle">
+  
+  <img src="/imgs/Avatar.jpg" alt="" class="avatar">
+  
+  <a href="http://localhost:4000/" class="author_name">Liuqinh2s</a>
+  <span class="author_job"></span>
+  <span class="author_bio mbm">Interested in Virtual Reality & Augment Reality & Artificial Intelligence</span>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="http://localhost:4000/">首页</a>
+        <span>/</span>
+      </li>
+       
+      <li class="nav-item">
+        <a href="http://localhost:4000/CV/">简历</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="http://localhost:4000/about">关于我</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="http://localhost:4000/archive/">归档</a>
+        
+          <span>/</span>
+        
+      </li>
+          
+      <li class="nav-item">
+        <a href="http://localhost:4000/categories/">分类</a>
+        
+          <span>/</span>
+        
+      </li>
+            
+      <li class="nav-item">
+        <a href="http://localhost:4000/tags/">标签</a>
+        
+          <span>/</span>
+        
+      </li>
+             
+    </ul>
+  </nav>
+  <div class="social-links">
+  <ul>
+    <li><a href="http://github.com/liuqinh2s" class="social-link-item" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+    <li><a href="http://www.weibo.com/liuqinh2s" class="social-link-item" target="_blank"><i class="fa fa-fw fa-weibo"></i></a></li>
+    
+    <li><a href="https://www.zhihu.com/people/liuqinh2s" class="social-link-item" target="_blank"><img src="/imgs/zhihu-small.png" height="15" width="15" alt="" class="zhihu"></a></li>
+    <li><a href="mailto:liuqinh2s@gmail.com" class="social-link-item" target="_blank"><i class="fa fa-fw fa-envelope"></i></a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ul>
+</div>
+
+  友情链接
+<div class="friends-links">
+    <a href="http://lianera.com" class="friends-link-item" target="_blank">lianera</a>
+</div>
+
+</div>
+
+      </div>
+    </div>
+    <div class="col s12 m9">
+      <div class="post-listing">
+        <!-- mathjax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<!-- 判断是否插入首页图片 -->
+
+
+<!-- 添加日期和阅读 -->
+<div id="post">
+    <header class="post-header">
+        <span class="post-meta">
+            <span class="post-date">
+                2017-01-19
+            </span>
+            •
+            <span class="read-time" title="Estimated read time">
+  
+  
+    1 min read
+  
+</span>
+
+        </span>
+        <h1 title="Python游戏开发之BombMan">Python游戏开发之BombMan</h1>
+    </header>
+
+    <!-- 引入google code pretiffy高亮样式 -->
+    <link href="/js/google-code-prettify/themes/github-v2.css" rel="stylesheet" type="text/css" />
+
+    <!-- 添加博文 -->
+    <article class="post-content">
+        <h2 id="环境安装">环境安装</h2>
+
+<p>Python3、pygame</p>
+
+<p>我用的是 <strong>macbook</strong>，下面讲讲 <strong>mac OS</strong> 的环境搭建：</p>
+
+<p>先使用homebrew安装Python3.</p>
+
+<p><img src="http://wx2.sinaimg.cn/mw690/006zFO3ggy1fbvru5hipoj30g403sjrw.jpg" alt="brew list" /></p>
+
+<p>可以看到我已经安装好了Python3。</p>
+
+<blockquote>
+  <p>关于homebrew的安装和使用教程网上很多，我这里就不写了，有疑问可以在评论里面提，我将一一解答</p>
+</blockquote>
+
+<p>然后安装pygame:</p>
+
+<p><code>pip3 install pygame</code></p>
+
+<p>我在使用pygame的时候遇到了一点问题，我的代码如下：</p>
+
+<pre><code># coding=utf-8
+
+import pygame
+from pygame.locals import *
+
+pygame.init()
+</code></pre>
+
+<p>在Pycharm（python的IDE，Integrated Development Environmnet，集成开发环境）中<code>from pygame.locals import *</code>显示是灰色的（unused import statement，没有用到的导入语句），而且提示init()不存在。</p>
+
+<blockquote>
+  <p>这时候你该想到可能是平台的问题了</p>
+</blockquote>
+
+<p>上谷歌搜索：mac Python3 pygame，我找到这个页面：http://pygame.org/wiki/macintosh</p>
+
+<p>安装上面的指示，我安装了XQuartz，重启macbook，解决了问题。</p>
+
+<p>这时候依然有个问题：<code>cannot find reference 'load' in 'image.py'</code>。看到这个问题，我心态有点爆炸，暗骂道，什么鬼。</p>
+
+<p>我按照这：https://gist.github.com/ExPHAT/0cfc67ceb8982d11fd27
+上面装了那些软件，依旧没有卵用，而且这个问题实在蹊跷。</p>
+
+<p>最后终于揭晓了问题原因，IDE没找到load函数而已，程序依旧可以运行正确。</p>
+
+<p>代码如下：</p>
+
+<pre><code>#coding=utf-8
+
+# 1 - Import library
+import pygame
+from pygame.locals import *
+
+# 2 - Initialize the game
+pygame.init()
+width, height = 640, 480
+screen = pygame.display.set_mode((width, height))
+
+# 3 - Load images
+player = pygame.image.load(u"./宝宝加油.png")
+
+# 4 - keep looping through
+while 1:
+    # 5 - clear the screen before drawing it again
+    screen.fill(0)
+    # 6 - draw the screen elements
+    screen.blit(player, (100, 100))
+    # 7 - update the screen
+    pygame.display.flip()
+    # 8 - loop through the events
+    for event in pygame.event.get():
+        # check if the event is the X button
+        if event.type == pygame.QUIT:
+            # if it is quit the game
+            pygame.quit()
+            exit(0)
+</code></pre>
+
+<p>代码运行效果：</p>
+
+<p><img src="http://wx4.sinaimg.cn/mw690/006zFO3ggy1fbwtk3wpqej30zq0rw1kx.jpg" alt="代码运行效果" /></p>
+
+<h2 id="架构">架构</h2>
+
+<p>搞定了环境，就开始分析游戏架构。</p>
+
+<p>首先必不可少的目录：</p>
+
+<ul>
+  <li>src（source的缩写，存放代码）</li>
+  <li>res（resource的缩写，存放资源，如：音乐、图片）</li>
+  <li>data（存放游戏数据，如：地图、人物属性、游戏进度等等）</li>
+  <li>lib（library，存放第三库）。</li>
+</ul>
+
+<p>这个炸弹人游戏是仿泡泡堂制作的，大家应该都玩过。</p>
+
+    </article>
+</div>
+
+
+<!-- 引入google code pretiffy -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/google-code-prettify/prettify.js"></script>
+<script type="text/javascript">
+    $(function(){
+      $("pre").addClass("prettyprint linenums");
+      prettyPrint();
+      });
+    </script>
+
+<!-- 添加博文分割线 -->
+<hr class="post-list__divider" />
+<section>
+       <ul class="pager">
+        
+        <li class="previous">
+            <a href="/2017/01/leetcode%E8%AE%B2%E8%A7%A3-401.-Binary-Watch/" data-toggle="tooltip" data-placement="top" title="leetcode讲解--401. Binary Watch">上一篇：  <span>leetcode讲解--401. Binary Watch</span>
+            </a>
+        </li>
+        
+        
+        <li class="next">
+            <a href="/2017/01/git%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" data-toggle="tooltip" data-placement="top" title="git学习记录">下一篇：  <span>git学习记录</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+<!-- 多说评论框 start -->
+
+<div class="ds-thread" data-thread-key="http://localhost:4000" data-title="Python游戏开发之BombMan" data-url="http://localhost:4000"></div>
+<!-- 多说评论框 end -->
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"liuqinh2s"};
+    (function() {
+     var ds = document.createElement('script');
+     ds.type = 'text/javascript';ds.async = true;
+     ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+     ds.charset = 'UTF-8';
+     (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+     })();
+    </script>
+<!-- 多说公共JS代码 end -->
+
+
+        <footer>
+  &copy; 2017 Liuqinh2s <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> Themes <a href="http://github.com/renyuanz/leonids/" target="_blank">Leonids</a>
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="http://localhost:4000/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/js/main.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62251910-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>

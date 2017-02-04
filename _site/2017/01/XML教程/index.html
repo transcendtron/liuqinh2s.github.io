@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>XML教程</title>
+  <meta name="description" content="XML(EXtensible Markup Language，可扩展标记语言)。概念  XML 被设计用来传输和存储数据。  HTML 被设计用来显示数据。  XML 标签没有被预定义。您需要自行定义标签。  XML 被设计为具有自我描述性。  XML 元素是可扩展的XML与HTML的主要区别：XML 不是 HT...">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+
+  <link rel="canonical" href="http://localhost:4000/2017/01/XML%E6%95%99%E7%A8%8B/">
+  <link rel="alternate" type="application/rss+xml" title="Liuqinh2s' Homepage" href="http://localhost:4000 /feed.xml " />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+</head>
+
+
+<body>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="table cover">
+        
+
+<div class="cover-card table-cell table-middle">
+  
+  <img src="/imgs/Avatar.jpg" alt="" class="avatar">
+  
+  <a href="http://localhost:4000/" class="author_name">Liuqinh2s</a>
+  <span class="author_job"></span>
+  <span class="author_bio mbm">Interested in Virtual Reality & Augment Reality & Artificial Intelligence</span>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="http://localhost:4000/">首页</a>
+        <span>/</span>
+      </li>
+       
+      <li class="nav-item">
+        <a href="http://localhost:4000/CV/">简历</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="http://localhost:4000/about">关于我</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="http://localhost:4000/archive/">归档</a>
+        
+          <span>/</span>
+        
+      </li>
+          
+      <li class="nav-item">
+        <a href="http://localhost:4000/categories/">分类</a>
+        
+          <span>/</span>
+        
+      </li>
+            
+      <li class="nav-item">
+        <a href="http://localhost:4000/tags/">标签</a>
+        
+          <span>/</span>
+        
+      </li>
+             
+    </ul>
+  </nav>
+  <div class="social-links">
+  <ul>
+    <li><a href="http://github.com/liuqinh2s" class="social-link-item" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+    <li><a href="http://www.weibo.com/liuqinh2s" class="social-link-item" target="_blank"><i class="fa fa-fw fa-weibo"></i></a></li>
+    
+    <li><a href="https://www.zhihu.com/people/liuqinh2s" class="social-link-item" target="_blank"><img src="/imgs/zhihu-small.png" height="15" width="15" alt="" class="zhihu"></a></li>
+    <li><a href="mailto:liuqinh2s@gmail.com" class="social-link-item" target="_blank"><i class="fa fa-fw fa-envelope"></i></a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ul>
+</div>
+
+  友情链接
+<div class="friends-links">
+    <a href="http://lianera.com" class="friends-link-item" target="_blank">lianera</a>
+</div>
+
+</div>
+
+      </div>
+    </div>
+    <div class="col s12 m9">
+      <div class="post-listing">
+        <!-- mathjax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<!-- 判断是否插入首页图片 -->
+
+
+<!-- 添加日期和阅读 -->
+<div id="post">
+    <header class="post-header">
+        <span class="post-meta">
+            <span class="post-date">
+                2017-01-21
+            </span>
+            •
+            <span class="read-time" title="Estimated read time">
+  
+  
+    1 min read
+  
+</span>
+
+        </span>
+        <h1 title="XML教程">XML教程</h1>
+    </header>
+
+    <!-- 引入google code pretiffy高亮样式 -->
+    <link href="/js/google-code-prettify/themes/github-v2.css" rel="stylesheet" type="text/css" />
+
+    <!-- 添加博文 -->
+    <article class="post-content">
+        <p>XML(EXtensible Markup Language，可扩展标记语言)。</p>
+
+<h2 id="概念">概念</h2>
+
+<ul>
+  <li>XML 被设计用来传输和存储数据。</li>
+  <li>HTML 被设计用来显示数据。</li>
+  <li>XML <strong>标签没有被预定义</strong>。您需要自行定义标签。</li>
+  <li>XML 被设计为具有自我描述性。</li>
+  <li>XML 元素是可扩展的</li>
+</ul>
+
+<p>XML与HTML的主要区别：</p>
+
+<p>XML 不是 HTML 的替代。</p>
+
+<p>XML 和 HTML 为不同的目的而设计：</p>
+
+<ul>
+  <li>XML 被设计为传输和存储数据，其焦点是 <strong>数据的内容</strong>。</li>
+  <li>HTML 被设计用来显示数据，其焦点是 <strong>数据的外观</strong>。</li>
+  <li>HTML 旨在 <strong>显示信息</strong>，而 XML 旨在 <strong>传输信息</strong>。</li>
+</ul>
+
+<h3 id="xml验证器">XML验证器</h3>
+
+<p>和任何语言一样，XML被错误的书写了，就会导致程序出错。所以我们可以使用XML验证器对XML文档进行语法校验。</p>
+
+<h3 id="xml的数据是树状的">XML的数据是树状的</h3>
+
+<pre><code>&lt;bookstore&gt;
+&lt;book category="COOKING"&gt;
+  &lt;title lang="en"&gt;Everyday Italian&lt;/title&gt;
+  &lt;author&gt;Giada De Laurentiis&lt;/author&gt;
+  &lt;year&gt;2005&lt;/year&gt;
+  &lt;price&gt;30.00&lt;/price&gt;
+&lt;/book&gt;
+&lt;book category="CHILDREN"&gt;
+  &lt;title lang="en"&gt;Harry Potter&lt;/title&gt;
+  &lt;author&gt;J K. Rowling&lt;/author&gt;
+  &lt;year&gt;2005&lt;/year&gt;
+  &lt;price&gt;29.99&lt;/price&gt;
+&lt;/book&gt;
+&lt;book category="WEB"&gt;
+  &lt;title lang="en"&gt;Learning XML&lt;/title&gt;
+  &lt;author&gt;Erik T. Ray&lt;/author&gt;
+  &lt;year&gt;2003&lt;/year&gt;
+  &lt;price&gt;39.95&lt;/price&gt;
+&lt;/book&gt;
+&lt;/bookstore&gt;
+</code></pre>
+
+<h3 id="语法">语法</h3>
+
+<ul>
+  <li>所有 XML 元素都须有关闭标签</li>
+  <li>XML 标签对大小写敏感</li>
+  <li>XML 必须正确地嵌套</li>
+  <li>XML 文档必须有根元素</li>
+  <li>XML 的属性值须加引号</li>
+  <li>实体引用（应对保留字符）</li>
+  <li>XML 中编写注释的语法与 HTML 的语法一致<code>&lt;!-- This is a comment --&gt;</code></li>
+  <li>在 XML 中，空格会被保留</li>
+  <li>XML 以 LF 存储换行</li>
+</ul>
+
+<blockquote>
+  <p>在 Windows 应用程序中，换行通常以一对字符来存储：回车符 (CR) 和换行符 (LF)。这对字符与打字机设置新行的动作有相似之处。在 Unix 应用程序中，新行以 LF 字符存储。而 Macintosh 应用程序使用 CR 来存储新行。</p>
+</blockquote>
+
+<p>在 XML 中，有 5 个预定义的实体引用：</p>
+
+<table class="dataintable">
+<tr>
+<td>&amp;lt;</td>
+<td>&lt;</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>&amp;gt;</td>
+<td>&gt;</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>&amp;amp;</td>
+<td>&amp;</td>
+<td>和号</td>
+</tr>
+<tr>
+<td>&amp;apos;</td>
+<td>'</td>
+<td>单引号</td>
+</tr>
+<tr>
+<td>&amp;quot;</td>
+<td>&quot;</td>
+<td>引号</td>
+</tr>
+</table>
+
+<h3 id="变量命名">变量命名</h3>
+
+<p>XML 元素必须遵循以下命名规则：</p>
+
+<ul>
+  <li>名称可以含字母、数字以及其他的字符</li>
+  <li>名称不能以数字或者标点符号开始</li>
+  <li>名称不能以字符 “xml”（或者 XML、Xml）开始</li>
+  <li>名称不能包含空格</li>
+  <li>可使用任何名称，没有保留的字词。</li>
+</ul>
+
+<p>最佳命名习惯</p>
+
+<ul>
+  <li>使名称具有描述性。使用下划线的名称也很不错。
+名称应当比较简短，比如：<code>&lt;book_title&gt;</code>，而不是：<code>&lt;the_title_of_the_book&gt;</code>。</li>
+  <li>避免 “-“ 字符。如果您按照这样的方式进行命名：”first-name”，一些软件会认为你需要提取第一个单词。</li>
+  <li>避免 “.” 字符。如果您按照这样的方式进行命名：”first.name”，一些软件会认为 “name” 是对象 “first” 的属性。</li>
+  <li>避免 “:” 字符。冒号会被转换为命名空间来使用（稍后介绍）。</li>
+  <li>XML 文档经常有一个对应的数据库，其中的字段会对应 XML 文档中的元素。有一个实用的经验，即使用数据库的名称规则来命名 XML 文档中的元素。</li>
+  <li>非英语的字母比如 éòá 也是合法的 XML 元素名，不过需要留意当软件开发商不支持这些字符时可能出现的问题。</li>
+</ul>
+
+<h3 id="xml-元素-vs-属性">XML 元素 vs. 属性</h3>
+
+<pre><code>&lt;person sex="female"&gt;
+  &lt;firstname&gt;Anna&lt;/firstname&gt;
+  &lt;lastname&gt;Smith&lt;/lastname&gt;
+&lt;/person&gt;
+
+&lt;person&gt;
+  &lt;sex&gt;female&lt;/sex&gt;
+  &lt;firstname&gt;Anna&lt;/firstname&gt;
+  &lt;lastname&gt;Smith&lt;/lastname&gt;
+&lt;/person&gt;
+</code></pre>
+
+<p>没有什么规矩可以告诉我们什么时候该使用属性，而什么时候该使用子元素。我的经验是在 HTML 中，属性用起来很便利，但是在 XML 中，您应该尽量避免使用属性。如果信息感觉起来很像数据，那么请使用子元素吧。</p>
+
+<p>因使用属性而引起的一些问题：</p>
+<ul>
+  <li>属性无法包含多重的值（元素可以）</li>
+  <li>属性无法描述树结构（元素可以）</li>
+  <li>属性不易扩展（为未来的变化）</li>
+  <li>属性难以阅读和维护</li>
+</ul>
+
+<p>请尽量使用元素来描述数据。而仅仅使用属性来提供与数据无关的信息。
+不要做这样的蠢事（这不是 XML 应该被使用的方式）：</p>
+
+<pre><code>&lt;note day="08" month="08" year="2008"
+to="George" from="John" heading="Reminder"
+body="Don't forget the meeting!"&gt;
+&lt;/note&gt;
+</code></pre>
+
+<p>上面的 ID 仅仅是一个标识符，用于标识不同的便签。它并不是便签数据的组成部分。
+在此我们极力向您传递的理念是：<strong>元数据（有关数据的数据）应当存储为属性，而数据本身应当存储为元素</strong>。</p>
+
+<pre><code>&lt;messages&gt;
+  &lt;note id="501"&gt;
+    &lt;to&gt;George&lt;/to&gt;
+    &lt;from&gt;John&lt;/from&gt;
+    &lt;heading&gt;Reminder&lt;/heading&gt;
+    &lt;body&gt;Don't forget the meeting!&lt;/body&gt;
+  &lt;/note&gt;
+  &lt;note id="502"&gt;
+    &lt;to&gt;John&lt;/to&gt;
+    &lt;from&gt;George&lt;/from&gt;
+    &lt;heading&gt;Re: Reminder&lt;/heading&gt;
+    &lt;body&gt;I will not&lt;/body&gt;
+  &lt;/note&gt;
+&lt;/messages&gt;
+</code></pre>
+
+<h3 id="xslt">XSLT</h3>
+
+<p>EXtensible Stylesheet Language Transformations</p>
+
+<p>XSLT 是首选的 XML 样式表语言。</p>
+
+    </article>
+</div>
+
+
+<!-- 引入google code pretiffy -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/google-code-prettify/prettify.js"></script>
+<script type="text/javascript">
+    $(function(){
+      $("pre").addClass("prettyprint linenums");
+      prettyPrint();
+      });
+    </script>
+
+<!-- 添加博文分割线 -->
+<hr class="post-list__divider" />
+<section>
+       <ul class="pager">
+        
+        <li class="previous">
+            <a href="/2017/01/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" data-toggle="tooltip" data-placement="top" title="正则表达式">上一篇：  <span>正则表达式</span>
+            </a>
+        </li>
+        
+        
+        <li class="next">
+            <a href="/2017/01/leetcode%E8%AE%B2%E8%A7%A3-206.-Reverse-Linked-List/" data-toggle="tooltip" data-placement="top" title="leetcode讲解--206. Reverse Linked List">下一篇：  <span>leetcode讲解--206. Reverse Linked List</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+<!-- 多说评论框 start -->
+
+<div class="ds-thread" data-thread-key="http://localhost:4000" data-title="XML教程" data-url="http://localhost:4000"></div>
+<!-- 多说评论框 end -->
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"liuqinh2s"};
+    (function() {
+     var ds = document.createElement('script');
+     ds.type = 'text/javascript';ds.async = true;
+     ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+     ds.charset = 'UTF-8';
+     (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+     })();
+    </script>
+<!-- 多说公共JS代码 end -->
+
+
+        <footer>
+  &copy; 2017 Liuqinh2s <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> Themes <a href="http://github.com/renyuanz/leonids/" target="_blank">Leonids</a>
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="http://localhost:4000/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/js/main.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62251910-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>

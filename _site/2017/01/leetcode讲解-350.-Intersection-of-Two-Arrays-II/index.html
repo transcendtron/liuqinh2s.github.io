@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>leetcode讲解--350. Intersection of Two Arrays II</title>
+  <meta name="description" content="350. Intersection of Two Arrays II题目地址Given two arrays, write a function to compute their intersection.Example:Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], re...">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+
+  <link rel="canonical" href="http://localhost:4000/2017/01/leetcode%E8%AE%B2%E8%A7%A3-350.-Intersection-of-Two-Arrays-II/">
+  <link rel="alternate" type="application/rss+xml" title="Liuqinh2s' Homepage" href="http://localhost:4000 /feed.xml " />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+</head>
+
+
+<body>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="table cover">
+        
+
+<div class="cover-card table-cell table-middle">
+  
+  <img src="/imgs/Avatar.jpg" alt="" class="avatar">
+  
+  <a href="http://localhost:4000/" class="author_name">Liuqinh2s</a>
+  <span class="author_job"></span>
+  <span class="author_bio mbm">Interested in Virtual Reality & Augment Reality & Artificial Intelligence</span>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="http://localhost:4000/">首页</a>
+        <span>/</span>
+      </li>
+       
+      <li class="nav-item">
+        <a href="http://localhost:4000/CV/">简历</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="http://localhost:4000/about">关于我</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="http://localhost:4000/archive/">归档</a>
+        
+          <span>/</span>
+        
+      </li>
+          
+      <li class="nav-item">
+        <a href="http://localhost:4000/categories/">分类</a>
+        
+          <span>/</span>
+        
+      </li>
+            
+      <li class="nav-item">
+        <a href="http://localhost:4000/tags/">标签</a>
+        
+          <span>/</span>
+        
+      </li>
+             
+    </ul>
+  </nav>
+  <div class="social-links">
+  <ul>
+    <li><a href="http://github.com/liuqinh2s" class="social-link-item" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+    <li><a href="http://www.weibo.com/liuqinh2s" class="social-link-item" target="_blank"><i class="fa fa-fw fa-weibo"></i></a></li>
+    
+    <li><a href="https://www.zhihu.com/people/liuqinh2s" class="social-link-item" target="_blank"><img src="/imgs/zhihu-small.png" height="15" width="15" alt="" class="zhihu"></a></li>
+    <li><a href="mailto:liuqinh2s@gmail.com" class="social-link-item" target="_blank"><i class="fa fa-fw fa-envelope"></i></a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ul>
+</div>
+
+  友情链接
+<div class="friends-links">
+    <a href="http://lianera.com" class="friends-link-item" target="_blank">lianera</a>
+</div>
+
+</div>
+
+      </div>
+    </div>
+    <div class="col s12 m9">
+      <div class="post-listing">
+        <!-- mathjax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<!-- 判断是否插入首页图片 -->
+
+
+<!-- 添加日期和阅读 -->
+<div id="post">
+    <header class="post-header">
+        <span class="post-meta">
+            <span class="post-date">
+                2017-01-15
+            </span>
+            •
+            <span class="read-time" title="Estimated read time">
+  
+  
+    1 min read
+  
+</span>
+
+        </span>
+        <h1 title="leetcode讲解--350. Intersection of Two Arrays II">leetcode讲解--350. Intersection of Two Arrays II</h1>
+    </header>
+
+    <!-- 引入google code pretiffy高亮样式 -->
+    <link href="/js/google-code-prettify/themes/github-v2.css" rel="stylesheet" type="text/css" />
+
+    <!-- 添加博文 -->
+    <article class="post-content">
+        <h3 id="350-intersection-of-two-arrays-ii">350. Intersection of Two Arrays II</h3>
+
+<p><a href="https://leetcode.com/problems/intersection-of-two-arrays-ii/">题目地址</a></p>
+
+<p>Given two arrays, write a function to compute their intersection.</p>
+
+<p>Example:
+Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].</p>
+
+<p>Note:
+Each element in the result should appear as many times as it shows in both arrays.
+The result can be in any order.
+Follow up:
+What if the given array is already sorted? How would you optimize your algorithm?
+What if nums1’s size is small compared to nums2’s size? Which algorithm is better?
+What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?</p>
+
+<p>翻译：</p>
+
+<p>给两个数组，写一个函数来计算它们的交集。</p>
+
+<p>例子：</p>
+
+<p>给定 nums1 = [1, 2, 2, 1], nums2 = [2, 2], 返回 [2, 2].</p>
+
+<p>注意：</p>
+
+<p>结果中的每个元素出现的次数都应该与它们出现在这两个数组中的次数一样多。</p>
+
+<p>结果中的元素顺序随意。</p>
+
+<p>接下来：</p>
+
+<p>如果给的数组已经排好了序怎么办？你怎么优化你的算法？
+如果 nums1 的长度比 nums2 长怎么办？哪种算法更好？
+如果 nums2 的元素存储在磁盘上，并且内存有限以至于你无法一次性把所有元素都加载到内存，怎么办？</p>
+
+<p>先上代码：</p>
+
+<pre><code>class Solution(object):
+    def intersect(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        ans=[]
+        c = collections.Counter(nums1)
+        for x in nums2:
+            if c[x]&gt;0:
+                ans += x,
+                c[x] -= 1
+        return ans
+</code></pre>
+
+<p>很简单吧，遍历两个数组即可（先把其中一个用哈希表，即 hashtable 存起来，然后遍历另一个，一边遍历一边匹配，匹配到了就加进结果集，然后哈希表相应项减一）。没有任何难度。</p>
+
+<p>再来看题目给出的附加问题：</p>
+
+<p>跟排没排好序没有半毛钱关系，因为你至少要遍历一遍吧，O(n)的时间总是要的。</p>
+
+<p>nums1 和 nums2 哪个长，也没有半毛钱关系（你把长的用哈希表存起来，再去匹配短的，和把短的用哈希表存起来，再去匹配唱的，不是一样的嘛）。</p>
+
+<p>如果 nums2 无法一次性拿出来，那就分几次拿呗，同样，没有半毛钱关系。</p>
+
+<p>这附加问题有点古怪啊，我没看出来有什么意义啊，求看懂了的同学教教我。</p>
+
+    </article>
+</div>
+
+
+<!-- 引入google code pretiffy -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/google-code-prettify/prettify.js"></script>
+<script type="text/javascript">
+    $(function(){
+      $("pre").addClass("prettyprint linenums");
+      prettyPrint();
+      });
+    </script>
+
+<!-- 添加博文分割线 -->
+<hr class="post-list__divider" />
+<section>
+       <ul class="pager">
+        
+        <li class="previous">
+            <a href="/2017/01/leetcode%E8%AE%B2%E8%A7%A3-343.-Integer-Break/" data-toggle="tooltip" data-placement="top" title="leetcode讲解--343. Integer Break">上一篇：  <span>leetcode讲解--343. Integer Break</span>
+            </a>
+        </li>
+        
+        
+        <li class="next">
+            <a href="/2017/01/leetcode%E8%AE%B2%E8%A7%A3-392.-Is-Subsequence/" data-toggle="tooltip" data-placement="top" title="leetcode讲解--392. Is Subsequence">下一篇：  <span>leetcode讲解--392. Is Subsequence</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+<!-- 多说评论框 start -->
+
+<div class="ds-thread" data-thread-key="http://localhost:4000" data-title="leetcode讲解--350. Intersection of Two Arrays II" data-url="http://localhost:4000"></div>
+<!-- 多说评论框 end -->
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"liuqinh2s"};
+    (function() {
+     var ds = document.createElement('script');
+     ds.type = 'text/javascript';ds.async = true;
+     ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+     ds.charset = 'UTF-8';
+     (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+     })();
+    </script>
+<!-- 多说公共JS代码 end -->
+
+
+        <footer>
+  &copy; 2017 Liuqinh2s <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> Themes <a href="http://github.com/renyuanz/leonids/" target="_blank">Leonids</a>
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="http://localhost:4000/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/js/main.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62251910-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>

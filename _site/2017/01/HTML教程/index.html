@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML教程</title>
+  <meta name="description" content="这是我自己写的一份HTML教程，作为一个计算机系的学生，这种东西还是要精通的啦，要不然就显得太naive了，下面我来讲讲我是怎么学HTML的，大家可以跟着来，你们说吼不吼啊。高屋建瓴首先记住这个东西的意思：HyperText Markup Language，中文释义：超文本标记语言。  以后应该养成好习惯，学一个...">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+
+  <link rel="canonical" href="http://localhost:4000/2017/01/HTML%E6%95%99%E7%A8%8B/">
+  <link rel="alternate" type="application/rss+xml" title="Liuqinh2s' Homepage" href="http://localhost:4000 /feed.xml " />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+</head>
+
+
+<body>
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="table cover">
+        
+
+<div class="cover-card table-cell table-middle">
+  
+  <img src="/imgs/Avatar.jpg" alt="" class="avatar">
+  
+  <a href="http://localhost:4000/" class="author_name">Liuqinh2s</a>
+  <span class="author_job"></span>
+  <span class="author_bio mbm">Interested in Virtual Reality & Augment Reality & Artificial Intelligence</span>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="http://localhost:4000/">首页</a>
+        <span>/</span>
+      </li>
+       
+      <li class="nav-item">
+        <a href="http://localhost:4000/CV/">简历</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="http://localhost:4000/about">关于我</a>
+        
+          <span>/</span>
+        
+      </li>
+        
+      <li class="nav-item">
+        <a href="http://localhost:4000/archive/">归档</a>
+        
+          <span>/</span>
+        
+      </li>
+          
+      <li class="nav-item">
+        <a href="http://localhost:4000/categories/">分类</a>
+        
+          <span>/</span>
+        
+      </li>
+            
+      <li class="nav-item">
+        <a href="http://localhost:4000/tags/">标签</a>
+        
+          <span>/</span>
+        
+      </li>
+             
+    </ul>
+  </nav>
+  <div class="social-links">
+  <ul>
+    <li><a href="http://github.com/liuqinh2s" class="social-link-item" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+    <li><a href="http://www.weibo.com/liuqinh2s" class="social-link-item" target="_blank"><i class="fa fa-fw fa-weibo"></i></a></li>
+    
+    <li><a href="https://www.zhihu.com/people/liuqinh2s" class="social-link-item" target="_blank"><img src="/imgs/zhihu-small.png" height="15" width="15" alt="" class="zhihu"></a></li>
+    <li><a href="mailto:liuqinh2s@gmail.com" class="social-link-item" target="_blank"><i class="fa fa-fw fa-envelope"></i></a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ul>
+</div>
+
+  友情链接
+<div class="friends-links">
+    <a href="http://lianera.com" class="friends-link-item" target="_blank">lianera</a>
+</div>
+
+</div>
+
+      </div>
+    </div>
+    <div class="col s12 m9">
+      <div class="post-listing">
+        <!-- mathjax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<!-- 判断是否插入首页图片 -->
+
+
+<!-- 添加日期和阅读 -->
+<div id="post">
+    <header class="post-header">
+        <span class="post-meta">
+            <span class="post-date">
+                2017-01-09
+            </span>
+            •
+            <span class="read-time" title="Estimated read time">
+  
+  
+    4 mins read
+  
+</span>
+
+        </span>
+        <h1 title="HTML教程">HTML教程</h1>
+    </header>
+
+    <!-- 引入google code pretiffy高亮样式 -->
+    <link href="/js/google-code-prettify/themes/github-v2.css" rel="stylesheet" type="text/css" />
+
+    <!-- 添加博文 -->
+    <article class="post-content">
+        <p>这是我自己写的一份HTML教程，作为一个计算机系的学生，这种东西还是要精通的啦，要不然就显得太naive了，下面我来讲讲我是怎么学HTML的，大家可以跟着来，你们说吼不吼啊。</p>
+
+<h2 id="高屋建瓴">高屋建瓴</h2>
+
+<p>首先记住这个东西的意思：HyperText Markup Language，中文释义：超文本标记语言。</p>
+
+<blockquote>
+  <p>以后应该养成好习惯，学一个东西就应该记住他的英文，一般缩写背后都有对应的单词，你必须能做到看到一个技术词汇的缩写就能想到背后的单词和单词的意思，否则就说明你连计算机正确的学习方法都没有掌握好（好，这里我给自己挖了一个坑：怎么高效的学计算机，以及掌握和内化计算机的常用思想，有空再填）。</p>
+</blockquote>
+
+<p>然后就按学语言的套路学呗。</p>
+
+<p>HTML的本质是 <strong>标记语言</strong>，这样的东西还有：Markdown，XML标记语言和编程语言是有区别的，标记语言不是图灵完备的，功能有限，作用就是让页面更加丰富。</p>
+
+<p>HTML 标签对大小写不敏感：<code>&lt;P&gt;</code> 等同于 <code>&lt;p&gt;</code>。</p>
+
+<p>注释标记 <code>&lt;!-- xxx内容 --&gt;</code></p>
+
+<p>HTML 中的预留字符必须被替换为字符实体。在 HTML 中不能使用小于号（&lt;）和大于号（&gt;），这是因为浏览器会误认为它们是标签。
+如果希望正确地显示预留字符，我们必须在 HTML 源代码中使用字符实体（character entities）。就和大多数语言中的关键字，或者转义符一样。<a href="http://www.w3school.com.cn/html/html_entities.asp">HTML 中有用的字符实体</a></p>
+
+<p>另外你还必须知道前端，也就是运行在客户端（浏览器）上的东西，三剑客：HTML、CSS、Javascript。HTML是骨架、CSS是衣服、Javascript是肌肉。</p>
+
+<p>还是那句老话，编程是非常依赖 <strong>实践</strong> 的，如果你打算学HTML，学前端编程，最好的方法：搭建一个静态页面（静态页面区别于动态页面的地方就是，没有交互，客户端只需从服务器读数据，不必返回数据给服务器）的博客，这里推荐github pages + jekyll，免费。</p>
+
+<h2 id="基本概念">基本概念</h2>
+
+<p>学东西先记概念吧，嗯，应该是理解概念。</p>
+
+<ul>
+  <li>元素（HTML 元素指的是从开始标签（start tag）到结束标签（end tag）的所有代码。）</li>
+  <li>标签</li>
+  <li>属性</li>
+</ul>
+
+<p>大多数 HTML 元素被定义为块级元素或内联元素。</p>
+
+<p>“块级元素”译为 block level element，“内联元素”译为 inline element。</p>
+
+<p>块级元素在浏览器显示时，通常会以新行来开始（和结束）。</p>
+
+<p>例子：&lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;table&gt;</p>
+
+<p>内联元素在显示时通常不会以新行开始。</p>
+
+<p>例子：<b>, &lt;td&gt;, <a>, <img /></a></b></p>
+
+<h2 id="补充概念">补充概念</h2>
+
+<h3 id="url">URL</h3>
+
+<p>uniform resource locator，统一资源定位符，遵循以下语法：
+<code>scheme://host.domain:port/path/filename</code></p>
+
+<ul>
+  <li>scheme - 定义因特网服务的类型。最常见的类型是 http</li>
+  <li>host - 定义域主机（http 的默认主机是 www）</li>
+  <li>domain - 定义因特网域名，比如 w3school.com.cn</li>
+  <li>:port - 定义主机上的端口号（http 的默认端口号是 80）</li>
+  <li>path - 定义服务器上的路径（如果省略，则文档必须位于网站的根目录中）。</li>
+  <li>filename - 定义文档/资源的名称</li>
+</ul>
+
+<p>其实就是协议+位置（位置又包括：ip地址+端口+文件在服务器上的位置）</p>
+
+<table class="dataintable">
+<tr>
+<th>Scheme</th>
+<th>访问</th>
+<th>用于...</th>
+</tr>
+
+<tr>
+<td>http</td>
+<td>超文本传输协议</td>
+<td>以 http:// 开头的普通网页。不加密。</td>
+</tr>
+
+<tr>
+<td>https</td>
+<td>安全超文本传输协议</td>
+<td>安全网页。加密所有信息交换。</td>
+</tr>
+
+<tr>
+<td>ftp</td>
+<td>文件传输协议</td>
+<td>用于将文件下载或上传至网站。</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>&nbsp;</td>
+<td>您计算机上的文件。</td>
+</tr>
+</table>
+
+<ul>
+  <li>URL 只能使用 ASCII 字符集来通过因特网进行发送。</li>
+  <li>由于 URL 常常会包含 ASCII 集合之外的字符，URL 必须转换为有效的 ASCII 格式。</li>
+  <li>URL 编码使用 “%” 其后跟随两位的十六进制数来替换非 ASCII 字符。</li>
+  <li>URL 不能包含空格。URL 编码通常使用 + 来替换空格。</li>
+</ul>
+
+<h2 id="不赞成使用的东西">不赞成使用的东西</h2>
+
+<blockquote>
+  <p>每门语言有其精华，也有其糟粕。这里我们记住一个单词：Deprecated（被废弃的），很多语言都会标明一些不被赞成使用的东西，这些东西有的是因为过时了有新的东西取代，有的是可能会造成危害，总之尽量不要使用，免得惹一身麻烦。</p>
+</blockquote>
+
+<p>HTML语言不被赞成使用的有：</p>
+
+<p>标签有：<code>&lt;center&gt;(定义居中的内容)、&lt;font&gt; 和 &lt;basefont&gt;、&lt;s&gt; 和 &lt;strike&gt;(删除线)、&lt;u&gt;</code></p>
+
+<p>属性有：<code>align(定义文本的对齐方式)、bgcolor(定义背景颜色)、color(定义文本颜色)</code></p>
+
+<p>为何不被建议使用，因为这些东西动了样式的蛋糕！<strong>我们编程的时候最喜欢让代码各司其职，这样我们就好找，哪里出了问题，就知道找哪里</strong>，要避免的就是这种搞得一团糟的东西，样式就用CSS，HTML自带的样式统统别用，省得麻烦。</p>
+
+<h2 id="标签">标签</h2>
+
+<p>既然是标记语言，那么就会有一大堆标签喽，够你记的啦。
+HTML的标签基本上都是这个样子：
+<code>&lt;html&gt;&lt;/html&gt;</code>成双成对的(称为：start tag end tag 或者 opening tag closing tag)。除了比如：<code>&lt;/br&gt;、&lt;br&gt;、&lt;br/&gt;</code>换行，其实也只是为了简单语法上简化了而已，<code>&lt;meta&gt;</code>同样不用closing tag。
+先来个hello world：</p>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;hello world&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>可以看到，结构很简单，最外层一个<code>&lt;html&gt;</code>，然后一个<code>&lt;head&gt;</code>，加一个<code>&lt;body&gt;</code>。一般在<code>&lt;head&gt;</code>里面放关于这个HTML文件的描述信息，比如文档的标题，用什么编码格式（UTF-8，还是GBK等），引用什么CSS和JS（Javascript）；body里面放的是具体的内容了。</p>
+
+<p>好了，大波标签袭来，请记住它们：</p>
+
+<p>首先授人以渔：</p>
+
+<p><a href="http://html.com/tags/i/">http://html.com/tags/i/</a></p>
+
+<p><a href="http://www.w3school.com.cn/tags/index.asp">http://www.w3school.com.cn/tags/index.asp</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>标签</th>
+      <th>解释</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>&lt;title&gt;</code></td>
+      <td>HTML文件的标题，放<code>&lt;head&gt;</code>中，这里我说一下，也可以放<code>&lt;body&gt;</code>里，我们放&lt;head&gt;中只是为了符合规范，一个好的程序员应该要讲规范</td>
+    </tr>
+    <tr>
+      <td><code>&lt;a&gt;</code></td>
+      <td>例子说来就来，请记住a背后的单词：address，地址，这样你就可以记住<code>&lt;a&gt;</code>是个啥东东，放链接用的</td>
+    </tr>
+    <tr>
+      <td><code>&lt;div&gt;</code></td>
+      <td>例子又来了啊，divide，划分</td>
+    </tr>
+    <tr>
+      <td><code>&lt;span&gt;</code></td>
+      <td>范围，跨度。</td>
+    </tr>
+    <tr>
+      <td><code>&lt;h1&gt;</code></td>
+      <td>还有<code>&lt;h2&gt;、&lt;h3&gt;</code>等等，总共有6级，单词：heading，中文释义：标题，<code>&lt;h1&gt;</code>是一级标题，也就是最大的标题。</td>
+    </tr>
+    <tr>
+      <td><code>&lt;img&gt;</code></td>
+      <td>图片，image</td>
+    </tr>
+    <tr>
+      <td><code>&lt;table&gt;</code></td>
+      <td>表格</td>
+    </tr>
+    <tr>
+      <td><code>&lt;tr&gt;</code></td>
+      <td>表格中的一行，跟我读：row，table row。</td>
+    </tr>
+    <tr>
+      <td><code>&lt;td&gt;</code></td>
+      <td>表格中的一个数据单元格，跟我读：data，table data，data cell</td>
+    </tr>
+    <tr>
+      <td><code>&lt;p&gt;</code></td>
+      <td>段落标记，跟我读：paragraph</td>
+    </tr>
+    <tr>
+      <td><code>&lt;br&gt;</code></td>
+      <td>换行，跟我读：break，create a line break or carriage-return within a parent element such as a paragraph without breaking out of the parent container.</td>
+    </tr>
+    <tr>
+      <td><code>&lt;hr&gt;</code></td>
+      <td>画一条横线，跟我读：horizontal line</td>
+    </tr>
+    <tr>
+      <td><code>&lt;font&gt;</code></td>
+      <td>字体</td>
+    </tr>
+    <tr>
+      <td><code>&lt;b&gt;</code></td>
+      <td>加粗，跟我读：blod，黑体的</td>
+    </tr>
+    <tr>
+      <td><code>&lt;i&gt;</code></td>
+      <td>斜体，跟我读：italics，斜体，The <code>&lt;i&gt;</code> element is used to differentiate words from the surrounding text by styling the marked text in italics without implying any added emphasis to the italicized words.</td>
+    </tr>
+    <tr>
+      <td><code>&lt;u&gt;</code></td>
+      <td>加下划线，跟我读：underline，不赞成使用。使用样式（style）代替。</td>
+    </tr>
+    <tr>
+      <td><code>&lt;em&gt;</code></td>
+      <td>定义着重文字，跟我读：emphasis</td>
+    </tr>
+    <tr>
+      <td><code>&lt;big&gt;</code></td>
+      <td>定义大号字</td>
+    </tr>
+    <tr>
+      <td><code>&lt;small&gt;</code></td>
+      <td>定义小号字</td>
+    </tr>
+    <tr>
+      <td><code>&lt;strong&gt;</code></td>
+      <td>定义加重语气</td>
+    </tr>
+    <tr>
+      <td><code>&lt;sub&gt;</code></td>
+      <td>定义下标字，<code>&lt;sub&gt;、&lt;sup&gt;</code>这两个完全可以看成英语的前缀，一个是上，一个是下。</td>
+    </tr>
+    <tr>
+      <td><code>&lt;sup&gt;</code></td>
+      <td>定义上标字。</td>
+    </tr>
+    <tr>
+      <td><code>&lt;ins&gt;</code></td>
+      <td>定义插入字，跟我读：insert</td>
+    </tr>
+    <tr>
+      <td><code>&lt;del&gt;</code></td>
+      <td>定义删除字，跟我读：delete</td>
+    </tr>
+    <tr>
+      <td><code>&lt;s&gt;</code></td>
+      <td>不赞成使用。使用 <code>&lt;del&gt;</code> 代替。strike的缩写</td>
+    </tr>
+    <tr>
+      <td><code>&lt;strike&gt;</code></td>
+      <td>不赞成使用。使用 <code>&lt;del&gt;</code> 代替。</td>
+    </tr>
+    <tr>
+      <td><code>&lt;abbr&gt;</code></td>
+      <td>定义缩写</td>
+    </tr>
+    <tr>
+      <td><code>&lt;cite&gt;</code></td>
+      <td>定义引用、引证。</td>
+    </tr>
+    <tr>
+      <td><code>&lt;meta&gt;</code></td>
+      <td>This element is always placed within the &lt;head&gt; section of the page. It cannot overlap the &lt;/head&gt; closing tag.Note that <meta /> is an empty element, and does not need a closing tag.意思就是只能放在<code>&lt;head&gt;</code>中，另外不需要结束标签。对应的单词：metadata，元数据【计算机专有名词】，作用：The <code>&lt;meta&gt;</code> element is used to add machine-readable information to an HTML document. Information added with the <code>&lt;meta&gt;</code> tag is not displayed to website visitors but is provided for use by browsers and web crawlers.意思就是不是给人看的，而是给浏览器或者爬虫看的，不会打印出来</td>
+    </tr>
+    <tr>
+      <td><code>&lt;link&gt;</code></td>
+      <td>链接一个外部样式表</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>好了到这里，你可能会发现，编程的基础应该是英语对吧，被你发现了，<strong>学好英语对于编程有这非常大的帮助。</strong></p>
+
+<blockquote>
+  <p>另外我说的放在<code>&lt;head&gt;</code>中，不是这样放：<code>&lt;head XXX我是内容&gt;</code>（这样是放属性的，不是放tag或者网页内容的），而是这样放<code>&lt;head&gt; XXX我是内容 &lt;/head&gt;</code>夹在首尾两个标签中。</p>
+</blockquote>
+
+<p>标签真多啊，带到这里为止，<strong>一般来说只需要知道常用的就行了，遇到没见过的再查文档，而不是试图去背文档。</strong></p>
+
+<h3 id="表格详解">表格详解</h3>
+
+<p><code>&lt;tr&gt;</code>标签还可以被<code>&lt;table&gt;</code>里的<code>&lt;thead&gt;</code>或<code>&lt;tbody&gt;</code>或<code>&lt;tfoot&gt;</code> <strong>包含</strong>。它们分别代表表头，表正文，表脚。在打印网页的时候，如果表格很大，一页打印不完，<code>&lt;thead&gt;</code>和<code>&lt;tfoot&gt;</code>将在每一页出现。</p>
+
+<pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;时间&lt;/th&gt;&lt;th&gt;地点&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;2000&lt;/td&gt;&lt;td&gt;悉尼&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;2004&lt;/td&gt;&lt;td&gt;雅典&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;2000&lt;/td&gt;&lt;td&gt;北京&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+
+<h2 id="属性">属性</h2>
+
+<p>HTML 标签可以拥有属性。属性提供了有关 HTML 元素的更多的信息。
+属性总是以 <strong>名称/值对</strong> 的形式出现，比如：name=”value”。
+<strong>属性总是在 HTML 元素的开始标签中规定。</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>属性</th>
+      <th>解释</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>href</code></td>
+      <td>定义一个超文本链接，跟我读：HyperText reference</td>
+    </tr>
+    <tr>
+      <td><code>class</code></td>
+      <td>定义一个类，作用是：可以为相同的元素的相同的类配置同一款样式</td>
+    </tr>
+    <tr>
+      <td><code>id</code></td>
+      <td>定义一个元素的唯一id（忘了元素是啥，可以往回看，前面概念中讲了讲了）</td>
+    </tr>
+    <tr>
+      <td><code>charset</code></td>
+      <td>字符集，定义了文本的字符串编码格式，放在<code>&lt;meta&gt;</code>中。</td>
+    </tr>
+    <tr>
+      <td><code>rel</code></td>
+      <td>relationship，规定当前文档与被链接文档之间的关系</td>
+    </tr>
+    <tr>
+      <td><code>type</code></td>
+      <td>规定被链接文档的 MIME 类型。</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>关于MIME类型，<a href="http://www.cnblogs.com/jsean/articles/1610265.html">什么是 MIME TYPE？</a></p>
+</blockquote>
+
+<h2 id="再来一波概念">再来一波概念</h2>
+
+<h3 id="界面布局">界面布局</h3>
+
+<p>好了，可能有人问界面布局怎么办，界面布局请用CSS.
+<a href="http://www.w3school.com.cn/html/html_layout.asp">w3school 展示的HTML布局</a></p>
+
+<h3 id="响应式web设计">响应式web设计</h3>
+
+<p>什么是响应式 Web 设计？</p>
+<ul>
+  <li>RWD 指的是响应式 Web 设计（Responsive Web Design）</li>
+  <li>RWD 能够以可变尺寸传递网页</li>
+  <li>RWD 对于平板和移动设备是必需的</li>
+</ul>
+
+<p>好了，又要讲一个核心观点：<strong>调用已经开发好的轮子，而不是事必躬亲（自己实现所有过程）。这大概是程序员最重要的观点了，不用别人已经写好的东西，只有累死的命。</strong></p>
+
+<blockquote>
+  <p>判断一个人编程水平，计算机能力是否强，一看他对于基础概念的把握是否深刻，二看他是否已经熟练使用各种相关的轮子。这两个都是非常关乎效率的。</p>
+</blockquote>
+
+<p>下面推荐一个框架：Bootstrap.</p>
+
+<p>Bootstrap 是最流行的开发响应式 web 的 HTML, CSS, 和 JS 框架。
+Bootstrap 帮助您开发在任何尺寸都外观出众的站点：显示器、笔记本电脑、平板电脑或手机。</p>
+
+<h3 id="html-框架">HTML 框架</h3>
+<p>通过使用框架，你可以在同一个浏览器窗口中显示不止一个页面。</p>
+
+<p>This feature is valid in HTML5, but is not recommended for use in most situations. Please read usage details below.</p>
+
+<p>给你例子你就看懂了：</p>
+
+<pre><code>&lt;html&gt;
+
+&lt;frameset cols="25%,50%,25%"&gt;
+
+  &lt;frame src="/example/html/frame_a.html"&gt;
+  &lt;frame src="/example/html/frame_b.html"&gt;
+  &lt;frame src="/example/html/frame_c.html"&gt;
+
+&lt;/frameset&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="html-iframe">HTML Iframe</h3>
+
+<p>中文名：HTML 内联框架，
+iframe 用于在网页内显示网页。
+<a href="http://www.w3school.com.cn/html/html_iframe.asp">w3school 展示的HTML Iframe</a></p>
+
+<h3 id="html-doctype">HTML &lt;!DOCTYPE&gt;</h3>
+
+<ul>
+  <li>&lt;!DOCTYPE&gt; 声明必须是 HTML 文档的第一行，位于 &lt;html&gt; 标签之前。</li>
+  <li>&lt;!DOCTYPE&gt; 不是 HTML 标签。它为浏览器提供一项信息（声明），即 HTML 是用什么版本编写的。</li>
+</ul>
+
+<table class="dataintable">
+<tr>
+<th style="width:40%;">版本</th>
+<th>年份</th>
+</tr>
+
+<tr>
+<td>HTML</td>
+<td>1991</td>
+</tr>
+
+<tr>
+<td>HTML+</td>
+<td>1993</td>
+</tr>
+
+<tr>
+<td>HTML 2.0</td>
+<td>1995</td>
+</tr>
+
+<tr>
+<td>HTML 3.2</td>
+<td>1997</td>
+</tr>
+
+<tr>
+<td>HTML 4.01</td>
+<td>1999</td>
+</tr>
+
+<tr>
+<td>XHTML 1.0</td>
+<td>2000</td>
+</tr>
+
+<tr>
+<td>HTML5</td>
+<td>2012</td>
+</tr>
+
+<tr>
+<td>XHTML5</td>
+<td>2013</td>
+</tr>
+</table>
+
+<p>常用的声明：</p>
+
+<p><strong>HTML5</strong></p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+</code></pre>
+
+<p><a href="https://liuqinh2s.github.io/">网页示例</a>右键查看源码，你就能看到这个网页版本是HTML5</p>
+
+<p><strong>HTML 4.01</strong></p>
+
+<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd"&gt;
+</code></pre>
+
+<p><a href="http://www.cwziyouren.com/ceshi/new86ci.php?affid=googl_wm_86pay_txt&amp;gclid=CPXv0frvttECFYeYvAodGwoOkg">网页示例</a>右键查看源码，你就能看到这个网页版本是HTML 4.01</p>
+
+<p><strong>XHTML 1.0</strong></p>
+
+<pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+</code></pre>
+
+<p><a href="http://www.trendmicro.com.cn/box/?gclid=CJyy6bnyttECFQsmvQod58kEMw">网页示例</a>右键查看源码，你就能看到这个网页版本是XHTML 1.0</p>
+
+<h3 id="xhtml-简介">XHTML 简介</h3>
+
+<p>只需记住XHTML 是以 XML 应用的方式定义的 HTML，为的是更为严格的语法从而方便的解释HTML（因为小型设备往往缺乏解释“糟糕”的标记语言的资源和能力。）。</p>
+
+<p><a href="http://www.w3school.com.cn/html/html_xhtml.asp">w3school的XHTML简介</a></p>
+
+<h3 id="http状态消息">HTTP状态消息</h3>
+
+<p><a href="http://www.w3school.com.cn/tags/html_ref_httpmessages.asp">这是你们要的HTTP状态消息</a></p>
+
+<p>常见的有：404。翻墙的同学可能经常看到：504 Gateway Timeout。</p>
+
+<p>教程到此就结束了，接下来可以看一些相关的东西：CSS、XML、编码、文件格式、图像</p>
+
+    </article>
+</div>
+
+
+<!-- 引入google code pretiffy -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/google-code-prettify/prettify.js"></script>
+<script type="text/javascript">
+    $(function(){
+      $("pre").addClass("prettyprint linenums");
+      prettyPrint();
+      });
+    </script>
+
+<!-- 添加博文分割线 -->
+<hr class="post-list__divider" />
+<section>
+       <ul class="pager">
+        
+        <li class="previous">
+            <a href="/2017/01/Python%E7%AC%94%E8%AE%B0/" data-toggle="tooltip" data-placement="top" title="Python笔记">上一篇：  <span>Python笔记</span>
+            </a>
+        </li>
+        
+        
+        <li class="next">
+            <a href="/2017/01/CSS%E6%95%99%E7%A8%8B/" data-toggle="tooltip" data-placement="top" title="CSS教程">下一篇：  <span>CSS教程</span>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+<!-- 多说评论框 start -->
+
+<div class="ds-thread" data-thread-key="http://localhost:4000" data-title="HTML教程" data-url="http://localhost:4000"></div>
+<!-- 多说评论框 end -->
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"liuqinh2s"};
+    (function() {
+     var ds = document.createElement('script');
+     ds.type = 'text/javascript';ds.async = true;
+     ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+     ds.charset = 'UTF-8';
+     (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+     })();
+    </script>
+<!-- 多说公共JS代码 end -->
+
+
+        <footer>
+  &copy; 2017 Liuqinh2s <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> Themes <a href="http://github.com/renyuanz/leonids/" target="_blank">Leonids</a>
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="http://localhost:4000/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/js/main.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62251910-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>
