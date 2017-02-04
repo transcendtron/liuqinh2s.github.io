@@ -14,7 +14,7 @@ Python3、pygame
 
 先使用homebrew安装Python3.
 
-![brew list](http://wx2.sinaimg.cn/mw690/006zFO3ggy1fbvru5hipoj30g403sjrw.jpg)
+![brew list](https://wx2.sinaimg.cn/mw690/006zFO3ggy1fbvru5hipoj30g403sjrw.jpg)
 
 可以看到我已经安装好了Python3。
 

@@ -8,7 +8,7 @@
     <pubDate>Wed, 25 Jan 2017 11:16:03 +0800</pubDate>
     <lastBuildDate>Wed, 25 Jan 2017 11:16:03 +0800</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
-    
+
       <item>
         <title>leetcode讲解之开篇--486. Predict the Winner</title>
         <description>&lt;h3 id=&quot;486-predict-the-winner&quot;&gt;486. Predict the Winner&lt;/h3&gt;
@@ -92,18 +92,18 @@
         <pubDate>Wed, 25 Jan 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/01/leetcode%E8%AE%B2%E8%A7%A3-486.-Predict-the-Winner/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/leetcode%E8%AE%B2%E8%A7%A3-486.-Predict-the-Winner/</guid>
-        
+
         <category>算法</category>
-        
+
         <category>leetcode</category>
-        
+
         <category>编程</category>
-        
-        
+
+
         <category>leetcode</category>
-        
+
       </item>
-    
+
       <item>
         <title>leetcode讲解--378. Kth Smallest Element in a Sorted Matrix</title>
         <description>&lt;h3 id=&quot;378-kth-smallest-element-in-a-sorted-matrix&quot;&gt;378. Kth Smallest Element in a Sorted Matrix&lt;/h3&gt;
@@ -231,18 +231,18 @@ class Solution(object):
         <pubDate>Mon, 23 Jan 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/01/leetcode%E8%AE%B2%E8%A7%A3-378.-Kth-Smallest-Element-in-a-Sorted-Matrix/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/leetcode%E8%AE%B2%E8%A7%A3-378.-Kth-Smallest-Element-in-a-Sorted-Matrix/</guid>
-        
+
         <category>算法</category>
-        
+
         <category>编程</category>
-        
+
         <category>leetcode</category>
-        
-        
+
+
         <category>leetcode</category>
-        
+
       </item>
-    
+
       <item>
         <title>leetcode讲解--206. Reverse Linked List</title>
         <description>&lt;h3 id=&quot;206-reverse-linked-list&quot;&gt;206. Reverse Linked List&lt;/h3&gt;
@@ -335,18 +335,18 @@ class Solution(object):
         <pubDate>Sun, 22 Jan 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/01/leetcode%E8%AE%B2%E8%A7%A3-206.-Reverse-Linked-List/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/leetcode%E8%AE%B2%E8%A7%A3-206.-Reverse-Linked-List/</guid>
-        
+
         <category>算法</category>
-        
+
         <category>编程</category>
-        
+
         <category>leetcode</category>
-        
-        
+
+
         <category>leetcode</category>
-        
+
       </item>
-    
+
       <item>
         <title>XML教程</title>
         <description>&lt;p&gt;XML(EXtensible Markup Language，可扩展标记语言)。&lt;/p&gt;
@@ -534,16 +534,16 @@ body=&quot;Don't forget the meeting!&quot;&amp;gt;
         <pubDate>Sat, 21 Jan 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/01/XML%E6%95%99%E7%A8%8B/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/XML%E6%95%99%E7%A8%8B/</guid>
-        
+
         <category>工具</category>
-        
+
         <category>XML</category>
-        
-        
+
+
         <category>教程</category>
-        
+
       </item>
-    
+
       <item>
         <title>正则表达式</title>
         <description>&lt;p&gt;正则表达式（英文：Regular Expression）具体介绍见下面维基百科。&lt;/p&gt;
@@ -796,16 +796,16 @@ body=&quot;Don't forget the meeting!&quot;&amp;gt;
         <pubDate>Fri, 20 Jan 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/01/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
-        
+
         <category>工具</category>
-        
+
         <category>正则表达式</category>
-        
-        
+
+
         <category>教程</category>
-        
+
       </item>
-    
+
       <item>
         <title>markdown语法</title>
         <description>&lt;p&gt;#相关教程
@@ -985,16 +985,16 @@ $ \lim $&lt;/p&gt;
         <pubDate>Fri, 20 Jan 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/01/markdown%E8%AF%AD%E6%B3%95/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/markdown%E8%AF%AD%E6%B3%95/</guid>
-        
+
         <category>标记语言</category>
-        
+
         <category>语法</category>
-        
-        
+
+
         <category>教程</category>
-        
+
       </item>
-    
+
       <item>
         <title>git学习记录</title>
         <description>&lt;p&gt;git是由Linus Torvalds在开发linux内核时发明的一种软件版本控制工具，其实这就是一个文件版本控制工具，协同写作也可以用git，会十分方便，github就是用的git。git是分布式的版本控制系统，而SVN是集中式的版本控制系统（也就是星型网络，必须要有一个中央服务器）。&lt;/p&gt;
@@ -1227,18 +1227,18 @@ Git的版本库里存了很多东西，其中最重要的就是称为stage（或
         <pubDate>Fri, 20 Jan 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/01/git%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/git%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</guid>
-        
+
         <category>工具</category>
-        
+
         <category>git</category>
-        
+
         <category>记录</category>
-        
-        
+
+
         <category>教程</category>
-        
+
       </item>
-    
+
       <item>
         <title>Python游戏开发之BombMan</title>
         <description>&lt;h2 id=&quot;环境安装&quot;&gt;环境安装&lt;/h2&gt;
@@ -1249,7 +1249,7 @@ Git的版本库里存了很多东西，其中最重要的就是称为stage（或
 
 &lt;p&gt;先使用homebrew安装Python3.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://wx2.sinaimg.cn/mw690/006zFO3ggy1fbvru5hipoj30g403sjrw.jpg&quot; alt=&quot;brew list&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/mw690/006zFO3ggy1fbvru5hipoj30g403sjrw.jpg&quot; alt=&quot;brew list&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;可以看到我已经安装好了Python3。&lt;/p&gt;
 
@@ -1343,18 +1343,18 @@ while 1:
         <pubDate>Thu, 19 Jan 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/01/Python%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E4%B9%8BBombMan/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/Python%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E4%B9%8BBombMan/</guid>
-        
+
         <category>游戏</category>
-        
+
         <category>Python</category>
-        
+
         <category>编程</category>
-        
-        
+
+
         <category>实战</category>
-        
+
       </item>
-    
+
       <item>
         <title>leetcode讲解--401. Binary Watch</title>
         <description>&lt;h2 id=&quot;401-binary-watch&quot;&gt;401. Binary Watch&lt;/h2&gt;
@@ -1458,18 +1458,18 @@ while 1:
         <pubDate>Wed, 18 Jan 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/01/leetcode%E8%AE%B2%E8%A7%A3-401.-Binary-Watch/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/leetcode%E8%AE%B2%E8%A7%A3-401.-Binary-Watch/</guid>
-        
+
         <category>算法</category>
-        
+
         <category>编程</category>
-        
+
         <category>leetcode</category>
-        
-        
+
+
         <category>leetcode</category>
-        
+
       </item>
-    
+
       <item>
         <title>leetcode讲解--268. Missing Number</title>
         <description>&lt;h2 id=&quot;268-missing-number&quot;&gt;268. Missing Number&lt;/h2&gt;
@@ -1520,17 +1520,17 @@ Your algorithm should run in linear runtime complexity. Could you implement it u
         <pubDate>Wed, 18 Jan 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/01/leetcode%E8%AE%B2%E8%A7%A3-268.-Missing-Number/</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/leetcode%E8%AE%B2%E8%A7%A3-268.-Missing-Number/</guid>
-        
+
         <category>算法</category>
-        
+
         <category>编程</category>
-        
+
         <category>leetcode</category>
-        
-        
+
+
         <category>leetcode</category>
-        
+
       </item>
-    
+
   </channel>
 </rss>
