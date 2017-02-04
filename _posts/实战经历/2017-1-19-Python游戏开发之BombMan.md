@@ -86,7 +86,7 @@ while 1:
 
 代码运行效果：
 
-![代码运行效果](http://wx4.sinaimg.cn/mw690/006zFO3ggy1fbwtk3wpqej30zq0rw1kx.jpg)
+![代码运行效果](https://wx4.sinaimg.cn/mw690/006zFO3ggy1fbwtk3wpqej30zq0rw1kx.jpg)
 
 ## 架构
 
