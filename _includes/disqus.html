@@ -1,5 +1,6 @@
 
 {% if page.comments == true %}
+<div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = '{{ site.owner.disqus-shortname }}';
@@ -13,4 +14,7 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<script id="dsq-count-scr" src="//liuqinh2s.disqus.com/count.js" async></script>
+
 {% endif %}
