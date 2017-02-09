@@ -12,7 +12,7 @@ comments: true
 
 先告诉你们一个通用小技巧，众所周知，flash视频非常让电脑发热，而看HTML5视频则一点都不热。safari有个伪装成iPad或者iPhone的功能，可以把视频强制用HTML5播放。你的MacBook就再也不会在看视频的时候发烫了。
 
-![safari强制使用HTML5播放视频](http://wx4.sinaimg.cn/mw690/006zFO3ggy1fcd4d2uzibj31kw0zkdug.jpg)
+![safari强制使用HTML5播放视频](https://wx4.sinaimg.cn/mw690/006zFO3ggy1fcd4d2uzibj31kw0zkdug.jpg)
 
 # 普通用户使用mac指南
 
@@ -24,7 +24,7 @@ comments: true
 
 和初次使用Linux一样，一上来我们肯定就要碰到输入法的难题，**mac切换输入法的快捷键是command+space（空格）**。对于用惯了搜狗输入法的同学，这里我推荐使用搜狗输入法。
 
-![mac输入法截图](http://wx4.sinaimg.cn/mw690/006zFO3ggy1fcceny2wsuj31kw0zkdku.jpg)
+![mac输入法截图](https://wx4.sinaimg.cn/mw690/006zFO3ggy1fcceny2wsuj31kw0zkdku.jpg)
 
 **搜狗默认的通用中英文切换键是 shift**。
 
@@ -36,15 +36,15 @@ mac的触摸板应该是所有笔记本电脑触摸板的宗师吧，而且也�
 
 五指合拢，你可以看到你电脑上安装好的应用，这个界面叫做：launchpad。
 
-![launchpad截图](http://wx2.sinaimg.cn/mw690/006zFO3ggy1fccexd55wpj31kw0zktgg.jpg)
+![launchpad截图](https://wx2.sinaimg.cn/mw690/006zFO3ggy1fccexd55wpj31kw0zktgg.jpg)
 
 五指弹开，如果你处在launchpad界面，五指弹开就会回到原先五指合拢之前的那个界面，回到这个界面之后，再用一次五指弹开，就是弹开所有应用，让你看到桌面（如果你当前窗口是全屏模式，则此法失效）。
 
-![弹开应用看到桌面](http://wx3.sinaimg.cn/mw690/006zFO3ggy1fccf5tp4rpj31kw0zkjwj.jpg)
+![弹开应用看到桌面](https://wx3.sinaimg.cn/mw690/006zFO3ggy1fccf5tp4rpj31kw0zkjwj.jpg)
 
 三指上推，可以看到所有打开的窗口的缩略图。
 
-![窗口缩略图](http://wx4.sinaimg.cn/mw690/006zFO3ggy1fccf0mfcanj31kw0zkqcm.jpg)
+![窗口缩略图](https://wx4.sinaimg.cn/mw690/006zFO3ggy1fccf0mfcanj31kw0zkqcm.jpg)
 
 三指横扫，可以在全屏之间切换，这是我最喜欢的设计之一。
 
@@ -78,13 +78,13 @@ command+x不能剪切文件和文件夹是吧。
 
 首先讲Finder，这是mac 系统，也就是OS X系统的文件管理器，和windows的文件管理器对比有有点不同，最不方便的地方在于点击右键没有新建文件选项，如果你会Linux，可以用命令`touch 文件名`来新建文件，如果你不会命令，可以先打开文本编辑器，再新建文本文件，它的设计哲学是，你要新建什么文件，就先打开与这个文件相关的软件，再在这个软件里新建这个类型的文件，不过不方便就是不方便。再讲讲优秀的地方，Finder可以打开多及目录。
 
-![Finder多级目录](http://ww4.sinaimg.cn/mw690/005DrjN1gw1fbgxqax4waj316s0o8n0e.jpg)
+![Finder多级目录](https://ww4.sinaimg.cn/mw690/005DrjN1gw1fbgxqax4waj316s0o8n0e.jpg)
 
 另外可以 **按空格键预览**，这个预览功能现在 Windows 也有了。
 
 Finder还有tag系统，你可以通过tag来访问属于同一个tag的文件
 
-![Finder的tag功能](http://ww3.sinaimg.cn/mw690/005DrjN1gw1fbgxwxxpobj316s0o8ad8.jpg)
+![Finder的tag功能](https://ww3.sinaimg.cn/mw690/005DrjN1gw1fbgxwxxpobj316s0o8ad8.jpg)
 
 ### 快捷键
 
