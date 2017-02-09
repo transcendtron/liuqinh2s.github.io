@@ -50,14 +50,9 @@ owner:
   email: liuqinh2s@gmail.com
   duoshuo: liuqinh2s #多说域名
 
-# 网站统计
-analytics:
-    baidu:
-        siteid: 653ac617693f8e980ba23a59d898f2ba        # 百度统计 js 代码后的字符串
-
   google:
     plus: #username
-    analytics: UA-62251910-1
+    analytics: UA-91674544-1
     verify:
     ad-client:
     ad-slot:
@@ -78,3 +73,8 @@ analytics:
   soundcloud: #username
   flickr: #username
   codepen: #username
+  
+# 网站统计
+analytics:
+    baidu:
+        siteid: 653ac617693f8e980ba23a59d898f2ba        # 百度统计 js 代码后的字符串
