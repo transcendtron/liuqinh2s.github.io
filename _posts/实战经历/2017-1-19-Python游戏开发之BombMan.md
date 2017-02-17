@@ -88,6 +88,18 @@ while 1:
 
 ![代码运行效果](https://wx4.sinaimg.cn/mw690/006zFO3ggy1fbwtk3wpqej30zq0rw1kx.jpg)
 
+如果出现：pygame.error: File is not a Windows BMP file，请重装pygame
+
+```
+pip3 list //查看你安装了哪些第三方库
+pip3 uninstall pygame
+pip3 install pygame
+```
+
+
+
+
+
 ## 架构
 
 搞定了环境，就开始分析游戏架构。
