@@ -6,19 +6,19 @@ tags: [Python, 教程, 编程语言]
 comments: true
 ---
 
-## python 特性
+## Python 特性
 
 ### 写在前面：
 
 **编程是非常注重实战的，一定要在实战中慢慢体会，这样效率才高，
 单看语法教程不仅看不进去，而且一点卵用都没有。**
 
->我是从C/C++转过来学python的，所以我会拿C/C++来和python进行对比。
+>我是从C/C++转过来学Python的，所以我会拿C/C++来和Python进行对比。
 
 ### 1. 不需要申明变量类型，比如：
 
 ```
-#!/usr/bin/python
+#!/usr/bin/Python
 # -*- coding: UTF-8 -*-
 
 counter = 100 # 赋值整型变量
@@ -28,7 +28,7 @@ name = "John" # 字符串
 print counter
 print miles
 print name
-# 这个print语法是python2的，python3的print要用函数形式：print()
+# 这个print语法是Python2的，Python3的print要用函数形式：print()
 ```
 
 ### 2. 同时给多个变量赋值，比如：
@@ -93,14 +93,14 @@ sorted，排序
 - 函数可以返回多个返回值，并统一使用`def`来定义函数，函数内可再定义函数
 - 类的成员函数和成员变量统统要加`self.`，没有访问权限控制（public,private,protect等等），全靠自觉
 
-### python2到python3的转换
+### Python2到Python3的转换
 
-Python虽然好用，但Python2到Python3的跨越确实把很多新手恶心到了，但作为一个程序员，我们的能力应该是可以强到解决这种小问题的。[python2和python3的区别](https://gist.github.com/scturtle/3060332)
+Python虽然好用，但Python2到Python3的跨越确实把很多新手恶心到了，但作为一个程序员，我们的能力应该是可以强到解决这种小问题的。[Python2和Python3的区别](https://gist.github.com/scturtle/3060332)
 
-## python 趣谈
+## Python 趣谈
 
-[python 发展史](https://www.15yan.com/story/1JKTBQvVk5e/)
+[Python 发展史](https://www.15yan.com/story/1JKTBQvVk5e/)
 
 摘要：
-1. python语言结合了ABC语言和C语言
+1. Python语言结合了ABC语言和C语言
 2. Python从一开始就特别在意可拓展性。Python可以在多个层次上拓展。从高层上，你可以直接引入.py文件。在底层，你可以引用C语言的库。Python程序员可以快速的使用Python写.py文件作为拓展模块。但当性能是考虑的重要因素时，Python程序员可以深入底层，写C程序，编译为.so文件引入到Python中使用。**俗称：胶水语言**
