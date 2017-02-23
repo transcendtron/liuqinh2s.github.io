@@ -4,8 +4,6 @@ title: 简历
 comments: true
 ---
 
->此简历由markdown编辑生成
-
 ## 个人信息
 
 姓名： **刘钦**
@@ -22,11 +20,7 @@ comments: true
 
 ## 学历
 
-中南大学
-
-本科
-
-物联网工程（信息科学与工程学院）
+中南大学  本科  物联网工程（信息科学与工程学院）
 
 ## 经历
 
@@ -37,27 +31,10 @@ comments: true
 4. 毕设做了个基于 **安卓** 系统和 **GPS** 的面积测量仪，拿了优秀。
 6. 租了一个阿里云 **服务器**，搭了一个minecraft服务器，一个shadowsocks服务，一个wordpress 博客。
 7. 在 **github** pages上搭了一个基于jekyll的个人主页。
-8. 学了点 **Python爬虫**，做了一个小东西，
-[Python爬虫之百度贴吧ID挖掘机](https://liuqinh2s.github.io/2017/01/%E7%99%BE%E5%BA%A6%E8%B4%B4%E5%90%A7ID%E6%8C%96%E6%8E%98%E6%9C%BA/)
+8. 学了点 **Python爬虫**，做了一个小东西，[Python爬虫之百度贴吧ID挖掘机](https://liuqinh2s.github.io/2017/01/%E7%99%BE%E5%BA%A6%E8%B4%B4%E5%90%A7ID%E6%8C%96%E6%8E%98%E6%9C%BA/)
 
-</br>
-</br>
-</br>
+**编程语言** ：C/C++、JAVA、Android、Python
 
-## 技能树
+**英语**：高考英语：130，大学四级：475，考研英语：65
 
-### 计算机基础
-
-数据结构、算法、计算机网络、操作系统、计算机组成原理与汇编、linux、数据库，甚至：电路、模电、数电等等都学过
-
-### 编程语言
-
-学过C/C++、JAVA、Android、Python
-
-### 英语
-
-高考英语：130，大学四级：475，考研英语：65
-
-### 程序员工具
-
-会用markdown（会用mathjax写数学公式）、git、linux、常年科学上网（google），查资料很拿手
+**程序员工具**：会用markdown（会用mathjax写数学公式）、git、linux、常年科学上网（google），查资料很拿手
