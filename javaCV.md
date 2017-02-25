@@ -35,5 +35,6 @@ comments: true
 5. 学习能力体现：一星期掌握Python并利用爬虫技术实现了百度贴吧用户资料的抓取。
 1. 掌握 HTML/CSS/JavaScript，XML，Python，JSP，Servlet，JDBC，SQL，MVC模式，git版本控制，markdown文档编写
 2. 熟悉 Linux，C/C++，Android，hibernate，spring，struts，eclipse，Tomcat
+
 ### 自我评价
 本人性格温和乐观，工作认真负责，忍耐能力强，有很强的集体荣誉感，善于学习、总结和钻研，动手能力强，分析和解决问题的能力强。
