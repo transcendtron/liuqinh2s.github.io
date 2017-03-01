@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C语言回炉重造笔记
-categories: 魔法手册
+categories: 麻瓜笔记
 tags: [C语言, 教程, 编程语言]
 comments: true
 ---
