@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Macbook
-categories: 我的推荐
+categories: 文章
 tags: [工具, mac]
 comments: true
 ---

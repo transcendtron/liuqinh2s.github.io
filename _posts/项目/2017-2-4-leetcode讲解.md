@@ -1,7 +1,7 @@
 ---
 layout: post
 title: leetcode讲解
-categories: 实战经历
+categories: 文章
 tags: [算法, leetcode, 编程]
 comments: true
 ---
