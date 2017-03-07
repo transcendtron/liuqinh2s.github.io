@@ -99,4 +99,4 @@ jetbrains家的IDE
 
 ![jetbrains家的IDE](http://wx2.sinaimg.cn/mw690/006zFO3ggy1fcd4vbx60yj31kw0zkqez.jpg)
 
-如何顺利的从Windows使用习惯迁移到macbook使用习惯，我写了一篇文章：
+如何顺利的从Windows使用习惯迁移到macbook使用习惯，我写了一篇文章：[从 Windows 转用 Mac OS X 记录](https://liuqinh2s.github.io/2017/01/%E4%BB%8E-windows-%E8%BD%AC%E7%94%A8-mac-OS-X-%E8%AE%B0%E5%BD%95/)
