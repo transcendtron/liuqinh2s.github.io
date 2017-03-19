@@ -33,3 +33,9 @@ comments: true
 - `R.java`文件在Android项目编译过程中 **自动生成**，遵照该文件头部的警示，请不要尝试修改该文件的内容。
 - Android为整个布局文件以及各个字符串生成资源ID，但activity_quiz.xml布局文件中的组件除外，因为不是所有的组件都需要资源ID。要为组件生成资源ID，请在定义组件的时为其添加上`android:id`属性。
 - android:id="@+id/true_button"，android:text="@string/true_button"请注意`android:id`属性值前面有一个+标志，而`android:text`属性值没有，这是因为我们将要创建资源ID，而对字符串资源只是做了引用。
+- 用快捷键自动导入需要的库类包
+- 引用组件可以通过`public View findViewById(int id)`方法来实现。请注意，赋值前，必须先将返回的View转型（cast）为Button。
+- **Android应用属于典型的事件驱动类型**。不同于命令行或脚本程序，事件驱动型应用启动后，即开始等待行为事件的发生，如用户单机某个按钮。（事件也可以由操作系统或其他应用触发，但用户触发的事件更显而易见。）
+- listener，监听器
+- 当前应用需要坚挺用户的按钮“单击”事件，因此监听器需要实现View.OnClickListener接口。
+- `setOnclickListener(OnClickListener)`方法以监听器作为参数被调用。土体来说，
