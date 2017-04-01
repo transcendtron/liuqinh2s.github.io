@@ -4,7 +4,7 @@
 ####################################
 #
 title:       "Liuqinh2s' Homepage"
-description: 现代魔法\探险者的人生手册\未来学家
+description: 计算机科学技术/人生经验/预测未来
 baseurl:
 url: "https://liuqinh2s.github.io"         # the base hostname & protocol for your site
 img_url: /imgs
@@ -41,7 +41,7 @@ owner:
   name: Liuqinh2s
   avatar: Avatar.jpg
   # job: "小溪之歌"
-  bio: 现代魔法/探险者的人生手册/未来学家
+  bio: 计算机科学技术/人生经验/预测未来
 
   github: liuqinh2s #username
   weibo: liuqinh2s #username
@@ -73,7 +73,7 @@ owner:
   soundcloud: #username
   flickr: #username
   codepen: #username
-  
+
 # 网站统计
 analytics:
     baidu:
