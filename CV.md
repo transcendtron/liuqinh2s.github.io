@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 简历
-permalink: /about
+permalink: CV
 comments: true
 ---
 
