@@ -18,7 +18,7 @@ comments: true
 
 重要的类：
 - `CameraManager`，用来打开摄像头，`openCamera`方法
-- `CameraDevice`，摄像头对象，有一个内部类`StateCallback`用来在打开摄像头的时候回调，`createCaptureRequest`方法，用来创建捕获请求，传递给CaptureRequest.Builder对象，`createCaptureSession`方法，用来创建捕获会话（三个参数，List<Surface>，表示摄像头传过来的数据放入哪个Surface对象中，CaptureRequestSession对象，这个类有两个内部类：StateCallback和CaptureCallback都是用来回调，这里用CameraCaptureSession.StateCallback，最后一个是线程对象，表示哪个线程处理这个会话）。
+- `CameraDevice`，摄像头对象，有一个内部类`StateCallback`用来在打开摄像头的时候回调，`createCaptureRequest`方法，用来创建捕获请求，传递给CaptureRequest.Builder对象，`createCaptureSession`方法，用来创建捕获会话（三个参数，`List<Surface>`，表示摄像头传过来的数据放入哪个Surface对象中，CaptureRequestSession对象，这个类有两个内部类：StateCallback和CaptureCallback都是用来回调，这里用CameraCaptureSession.StateCallback，最后一个是线程对象，表示哪个线程处理这个会话）。
 - `CaptureRequest.Builder`对象，它接受的是CameraDevice.createCaptureRequest()返回的对象，可以设置各种具体的事项，如：自动对焦，自动打开闪光灯，设置摄像头传回来的数据的接受目标
 
 ### 打开摄像头
