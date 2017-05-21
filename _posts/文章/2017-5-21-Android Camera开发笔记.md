@@ -33,7 +33,7 @@ try{
     if(ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
         return;
     }
-    //打开摄像头，注意参数：摄像头ID（String，'0'或者'1'，分别代表前后摄像头），stateCallback是一个回调对象，mainHandler是线程处理对象（也就是说把这个打开过程交给哪个线程）
+    //打开摄像头，注意参数：摄像头ID（String，"0"或者"1"，分别代表前后摄像头），stateCallback是一个回调对象，mainHandler是线程处理对象（也就是说把这个打开过程交给哪个线程）
     mCameraManager.openCamera(mCameraID, stateCallback, mainHandler);
 } catch(CameraException e){
     e.printStackTrace();
@@ -42,7 +42,7 @@ try{
 
 ### 获取摄像头实时预览画面
 
-openCamera的stateCallback（摄像头回调），CameraDevice.StateCallback类（CameraDevice本身是一个类，StateCallback是它的内部类）
+上述openCamera中的参数stateCallback（摄像头回调）的具体实现，CameraDevice.StateCallback类（CameraDevice本身是一个类，StateCallback是它的内部类）
 
 ```java
 private CameraDevice.StateCallback stateCallback = new CameraDevice.StateCallback(){
@@ -72,34 +72,40 @@ private CameraDevice.StateCallback stateCallback = new CameraDevice.StateCallbac
 ```java
 private void startPreview(){
     try{
-        //创建一个CaptureRequest.Builder实例对象，传入CameraDevice的TEMPLATE_PREVIEW参数（用于获取实时画面预览，其他的几个属性比如：TEMPLATE_STILL_CAPTURE，是用来获取照片；TEMPLATE_RECORD，是用来获取录像）
-        final CaptureRequest.Builder previewRequestBuilder = mCameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW);
-        //将SurfaceView作为CaptureRequest.Builder的目标输出容器
+        //创建一个CaptureRequest.Builder实例对象，它接受的是CameraDevice.createCaptureRequest()返回的对象，传入的TEMPLATE_PREVIEW参数（用于获取实时画面预览，其他的几个属性比如：TEMPLATE_STILL_CAPTURE，是用来获取照片；TEMPLATE_RECORD，是用来获取录像）
+        previewRequestBuilder = mCameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW);
+        //将SurfaceView（SurfaceHolder是用来管理SurfaceView的对象）作为CaptureRequest.Builder的目标输出容器
         previewRequestBuilder.addTarget(mSurfaceHolder.getSurface());
-        //创建CameraCaptureSession会话，该对象负责管理预览请求和拍照请求
-        mCameraDevice.createCaptureSession(Arrays.asList(mSurfaceHolder.getSurface(), mImageReader.getSurface()), new CameraCaptureSession.StateCallback(){
-            @Override
-            public void onConfigured(CameraCaptureSession cameraCaptureSession){
-                if(null == mCameraDevice)return;
-                //当摄像头已经准备好时，开始显示预览
-                mCameraCaptureSession = cameraCaptureSession;
-                try{
-                    //自动对焦，AF的意思：Auto Focus
-                    previewRequestBuilder.set(CaptureRequest.CONTROL_AF_MODE,CaptureRequest.CONTROL_AF_MODE_CONTINUOUS_PICTURE);
-                    //打开闪光灯，AE的意思：Auto Exposure
-                    previewRequestBuilder.set(CaptureRequest.CONTROL_AE_MODE, CaptureRequest.CONTROL_AE_MODE_ON_AUTO_FLASH);
-                    mCameraCaptureSession.setRepeatingRequest(previewRequestBuilder.build(), null, childHandler);
-                } catch(CameraAccessException e){
-                    e.printStackTrace();
-                }
-            }
-            @Override
-            public void onConfigureFailed(CameraCaptureSession cameraCaptureSession){
-                Toast.makeText(MainActivity.this, "会话建立失败", Toast.LENGTH_SHORT).show();
-            }
-        }, childHandler);
+        //创建CameraCaptureSession会话，这个会话对象负责管理所有的预览请求、拍照请求、录像请求
+        mCameraDevice.createCaptureSession(Arrays.asList(mSurfaceHolder.getSurface(), mImageReader.getSurface()), previewSessionCallback, childHandler);
     } catch(CameraException e){
         e.printStackTrace();
+    }
+}
+```
+
+### 会话回调时，预览、拍照、录像，分别需要的具体实现
+
+```java
+private CameraCaptureSession.StateCallback previewSessionCallback = new CameraCaptureSession.StateCallback(){
+    @Override
+    public void onConfigured(CameraCaptureSession cameraCaptureSession){
+        if(null == mCameraDevice)return;
+        mCameraCaptureSession = cameraCaptureSession;
+        try{
+            //自动对焦，AF的意思：Auto Focus
+            previewRequestBuilder.set(CaptureRequest.CONTROL_AF_MODE, CaptureRequest.CONTROL_AF_MODE_CONTINUOUS_PICTURE);
+            //打开闪光灯，AE的意思：Auto Exposure
+            previewRequestBuilder.set(CaptureRequest.CONTROL_AE_MODE, CaptureRequest.CONTROL_AE_MODE_ON_AUTO_FLASH);
+            //setRepeatingRequest()方法表示持续的重复的请求，其他的几个方法：capture()拍照
+            mCameraCaptureSession.setRepeatingRequest(previewRequestBuilder.build(), null, childHandler);
+        } catch(CameraAccessException e){
+            e.printStackTrace();
+        }
+    }
+    @Override
+    public void onConfigureFailed(CameraCaptureSession cameraCaptureSession){
+        Toast.makeText(MainActivity.this, "会话建立失败", Toast.LENGTH_SHORT).show();
     }
 }
 ```
